@@ -1,18 +1,4 @@
-# # Three quote marks in a row allow you to auto detect new lines 
-# # print("""Customer: Good morning.
-# # Owner: Good morning""")
-
-# import json
-
-# question = input("What do you want to do?")
-# print(question)
-
-# if question == "Attack":
-#     print("Roll")
-#     yourTotal = int(input("What is your attack total?"))
-#     print(yourTotal)
-# else:
-#     print("I didn't get that")
+import json
 from django.db import models
 
 #the combat classes 
@@ -256,11 +242,6 @@ class NPC(models.Model):
     Abilities_3 = models.CharField(max_length=50)
 
 
-# x=5
-# y=2
-# print(x//y)
-# print(x%y)
-# print(x/y)
 
 # fullAP = 12
 # playerAP = fullAP
@@ -279,31 +260,3 @@ class NPC(models.Model):
 #     else:
 #         ap = 0
 # print("Your turn is over")
-
-# name = input("What is your name?")
-# nameLen = len(name)
-# for chr in name:
-#     print(chr)
-# print(name[3])
-# print(name[4])
-# while nameLen > 0: 
-#     reverseName = [name]
-#     print(name[nameLen])
-#     nameLen = nameLen - 1
-# print("finished")
-    
-
-# fullLength = list(range())
-
-# def allTheCalculations(x, y):
-#     # print("ADD" + str(x) "+" + str(y) "=" str(x+y))
-#     # print("SUB" + str(x) "-" + str(y) "=" str(x+y))
-#     # print("MUL" + str(x) "*" + str(y) "=" str(x+y))
-#     # print("DIV" + str(x) "/" + str(y) "=" str(x+y))
-#     print(x + y)
-#     print(x - y)
-#     print(x * y)
-#     print(x / y)
-#     return x
-
-# allTheCalculations(12,4)
