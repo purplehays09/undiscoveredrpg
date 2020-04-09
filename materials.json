@@ -1,0 +1,210 @@
+[
+    {
+        "Name":{
+            "Type": "string(material types",
+            "Durability": "int",
+            "State": "sting(matter types)",
+            "Immunities": "string(damage types)",
+            "Weight_Class": "int",
+            "Strengths": "string(damage types)",
+            "Weakenesses": "sting(damage types)",
+            "Attributes":"string(materials key)",
+            "Description": "string(long form)"
+        }
+    },
+    {
+        "Flesh":{
+            "Type": "Animal",
+            "Durability": "2",
+            "State": "Pliable",
+            "Immunities": null,
+            "Weight_Class": "2",
+            "Strengths": "Bludgeoning",
+            "Weakenesses": "Piercing, Slashing, Acid",
+            "Attributes":"",
+            "Description": ""
+        }
+    },
+    {
+        "Bone":{
+            "Type": "Animal",
+            "Durability": "3",
+            "State": "Solid",
+            "Immunities": "Fire",
+            "Weight_Class": "3",
+            "Strengths": "Lightning",
+            "Weakenesses": "Bludgeoning, Piercing, Slashing",
+            "Attributes":"Splintering 2, Bludgeoning 1",
+            "Description": ""
+        }
+    },
+    {
+        "Hide":{
+            "Type": "Animal",
+            "Durability": "2",
+            "State": "Pliable",
+            "Immunities": "Poison",
+            "Weight_Class": "1",
+            "Strengths": "Bludgeoning",
+            "Weakenesses": "Piercing, Slashing",
+            "Attributes":"Craftable 1, Absorbent 1",
+            "Description": ""
+        }
+    },
+    {
+        "Blood":{
+            "Type": "Animal",
+            "Durability": "unfinished",
+            "State": "liquid",
+            "Immunities": "unfinished",
+            "Weight_Class": "unfinished",
+            "Strengths": "unfinished",
+            "Weakenesses": "unfinished",
+            "Attributes":"unfinished",
+            "Description": ""
+        }
+    },
+    {
+        "Wood":{
+            "Type": "Vegetable",
+            "Durability": "3",
+            "State": "Solid",
+            "Immunities": "Poison",
+            "Weight_Class": "3",
+            "Strengths": "Bludgeoning",
+            "Weakenesses": "Fire, Piercing, Slashing",
+            "Attributes":"Absorbent1, Bludgeoning 1, Craftable 3, Flammable 2, Splintering 2",
+            "Description": ""
+        }
+    },
+    {
+        "Plant":{
+            "Type": "Vegetable",
+            "Durability": "1",
+            "State": "Pliable",
+            "Immunities": "Poison",
+            "Weight_Class": "1",
+            "Strengths": "Bludgeoning",
+            "Weakenesses": "Fire, Piercing, Slashing",
+            "Attributes":"",
+            "Description": ""
+        }
+    },
+    {
+        "Fabric":{
+            "Type": "Vegetable",
+            "Durability": "1",
+            "State": "Pliable",
+            "Immunities": "Poison",
+            "Weight_Class": "1",
+            "Strengths": "",
+            "Weakenesses": "Fire, Piercing, Slashing",
+            "Attributes":"Absorbent 2, Craftable 2, Flammable 2",
+            "Description": ""
+        }
+    },
+    {
+        "Stone":{
+            "Type": "Mineral",
+            "Durability": "4",
+            "State": "Solid",
+            "Immunities": "Fire, Lightning, Poison",
+            "Weight_Class": "4",
+            "Strengths": "Piercing, Slashing",
+            "Weakenesses": "Bludgeoning, Force",
+            "Attributes":"Bludgeoning 2, Brittle 1, Craftable 1",
+            "Description": ""
+        }
+    },
+    {
+        "Metal":{
+            "Type": "Mineral",
+            "Durability": "5",
+            "State": "Solid",
+            "Immunities": "Poison",
+            "Weight_Class": "5",
+            "Strengths": "Piercing, Slashing",
+            "Weakenesses": "Acid, Fire, Freezing",
+            "Attributes":"Bludgeoning 3, Conductive 2, Craftable 3, Warping 2",
+            "Description": ""
+        }
+    },
+    {
+        "Earth":{
+            "Type": "Mineral",
+            "Durability": "2",
+            "State": "Granular",
+            "Immunities": "Lightning, Poison",
+            "Weight_Class": "3",
+            "Strengths": "Bludgeoning",
+            "Weakenesses": "Piercing",
+            "Attributes":"Absorbent 2",
+            "Description": ""
+        }
+    },
+    {
+        "Glass":{
+            "Type": "Mineral",
+            "Durability": "3",
+            "State": "Solid",
+            "Immunities": "Acid",
+            "Weight_Class": "3",
+            "Strengths": "Lightning",
+            "Weakenesses": "Bludgeoning, Force, Piercing, Slashing",
+            "Attributes":"Brittle 3, Craftable 2, Piercing 2",
+            "Description": ""
+        }
+    },
+    {
+        "Water":{
+            "Type": "Liquid",
+            "Durability": "3",
+            "State": "Liquid",
+            "Immunities": "Poison, Lightning, Bludgeoning, Piercing, Slashing, Acid, Force",
+            "Weight_Class": "3",
+            "Strengths": "Fire",
+            "Weakenesses": "Freezing",
+            "Attributes":"Conductive 3, Freezable 3, Slick 1",
+            "Description": ""
+        }
+    },
+    {
+        "Oil":{
+            "Type": "Liquid",
+            "Durability": "3",
+            "State": "Liquid",
+            "Immunities": "Poison, Lightning, Bludgeoning, Piercing, Slashing, Force",
+            "Weight_Class": "2",
+            "Strengths": "",
+            "Weakenesses": "Fire, Freezing",
+            "Attributes":"Flammable 3",
+            "Description": ""
+        }
+    },
+    {
+        "Ether":{
+            "Type": "Liquid",
+            "Durability": "3",
+            "State": "Liquid",
+            "Immunities": "Poison, Lightning, Bludgeoning, Piercing, Slashing, Force",
+            "Weight_Class": "2",
+            "Strengths": "",
+            "Weakenesses": "Fire",
+            "Attributes":"Flammable 3, Freezable 1, Conductive 3",
+            "Description": ""
+        }
+    },
+    {
+        "Ice":{
+            "Type": "Liquid",
+            "Durability": "3",
+            "State": "Solid",
+            "Immunities": "Poison, Freezing",
+            "Weight_Class": "2",
+            "Strengths": "",
+            "Weakenesses": "Fire",
+            "Attributes":"Piercing",
+            "Description": "Bludgeoning 2, Brittle 2, Freezable 2"
+        }
+    }
+]

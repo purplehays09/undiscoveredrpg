@@ -1,0 +1,65 @@
+[
+    {"Name":{
+    "Description":"string",
+    "Stage1": "string",
+    "Stage2": "string",
+    "Stage3": "string"
+    }
+    },
+    {"Bleeding":{
+        "Description":"",
+        "Stage1": "\u2022 -1 Health Tier",
+        "Stage2": "\u2022 -1 Health Tier\n\u2022 -2 Movement\n\u2022 Leave Blood Trail",
+        "Stage3": "\u2022 Max Health = 1 Tier\n\u2022 -4 Movement\n\u2022 Leave Blood Trail"
+        }
+    },
+    {"Blinded":{
+        "Description":"",
+        "Stage1": "\u2022 -5 Perception",
+        "Stage2": "\u2022 -10 Perception\n\u2022 +3 Crit Fail Threshold on all skills that rely on sight",
+        "Stage3": "\u2022 Cannot see and auto fail all skills that rely on sight"
+        }
+    },
+    {"Crippled":{
+        "Description":"",
+        "Stage1": "\u2022 Arm: -5 on all skills that require the arm\n\u2022 Leg: -5 on all skills that require the leg",
+        "Stage2": "\u2022 Arm: -10 on all skills that require the arm\n\u2022 Leg: -10 on all skills that require the leg\n\u2022 -2 STR and DEX mod",
+        "Stage3": "\u2022 Arm: Auto Fail on all checks that use the arm\n\u2022 Leg: Auto Fail on all checks that use the leg\n\u2022 -5 STR and DEX mod"
+        }
+    },
+    {"Deafened":{
+        "Description":"",
+        "Stage1": "\u2022 -5 Stealth\n\u2022 +1 Travel Encounter Roll",
+        "Stage2": "\u2022 -10 Stealth\n\u2022 Auto Surprised 1 by all attacks\n\u2022 +1 Travel Encounter Roll",
+        "Stage3": "\u2022 -15 Stealth\n\u2022 Auto Surprised 2 by all attacks\n\u2022 +1 Travel Encounter Roll"
+        }
+    },
+    {"Drowsy":{
+        "Description":"",
+        "Stage1": "\u2022 You can only take an action once every 2 rounds",
+        "Stage2": "\u2022 You can only take an action once every 3 rounds",
+        "Stage3": "\u2022 You can only move on your turn"
+        }
+    },
+    {"Fatigued":{
+        "Description":"",
+        "Stage1": "\u2022 -2 STR and DEX mod\n\u2022 Travel Time Doubled",
+        "Stage2": "\u2022 -5 STR and DEX mod\n\u2022 Travel Time Doubled",
+        "Stage3": "\u2022 -10 STR and DEX mod\n\u2022 You cannot travel without a vehicle or being carried"
+        }
+    },
+    {"Fractured":{
+        "Description":"",
+        "Stage1": "\u2022 You take 1 stage of Bleeding for every 4 yards you move on a round",
+        "Stage2": "\u2022 You take 1 stage of Bleeding for every 2 yards you move on a round",
+        "Stage3": "\u2022 You take 1 stage of Bleeding for every yard you move"
+        }
+    },
+    {"Sickened":{
+        "Description":"",
+        "Stage1": "\u2022 -2 CON and WIS mod\n\u2022 Travel Time Doubled\n\u2022 And STR DEX or CON fail debilitates you for a round",
+        "Stage2": "\u2022 -5 CON and WIS mod\n\u2022 Travel Time Doubled\n\u2022 And STR DEX or CON fail debilitates you for a round",
+        "Stage3": "\u2022 -10 CON and WIS mod\n\u2022 You cannot travel without a vehicle or being carried\n\u2022 And STR DEX or CON fail debilitates you for a round"
+        }
+    }
+]

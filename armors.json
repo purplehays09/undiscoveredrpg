@@ -1,0 +1,152 @@
+[
+    {"armor_name": {
+        "Type": "string(armor types)",
+        "Defend": "int",
+        "Block_Bonus": "string(half, full, or none)",
+        "Dodge_Base": "int",
+        "Dodge_Bonus": "string(half, full, or none)",
+        "Mobility": "int",
+        "Durability": "int",
+        "Features": "string",
+        "Techniques": "string",
+        "Vital1": "string",
+        "Vital2": "sting",
+        "Vital3": "string"
+    }
+    },
+    {"Unarmored": {
+        "Type": "Light",
+        "Defend": "6",
+        "Block_Bonus": "Block",
+        "Agility": "10",
+        "Dodge_Bonus": "Dodge",
+        "Mobility": "4",
+        "Durability": null,
+        "Features": "Unburdened 1",
+        "Techniques": "Unburdened 3",
+        "Vital1": "1d6",
+        "Vital2": "1d6 + 1/2 Dodge",
+        "Vital3": "1d6 + Dodge"
+    }
+    },
+    {"Leather Armor": {
+        "Type": "Light",
+        "Defend": "8",
+        "Block_Bonus": null,
+        "Agility": "12",
+        "Dodge_Bonus": "1/2 Dodge",
+        "Mobility": "3",
+        "Durability": "6",
+        "Features": "Utility 1",
+        "Techniques": "Utility 2, Nimble 1",
+        "Vital1": "1d6",
+        "Vital2": "2d6",
+        "Vital3": "2d6 + 1/2 Dodge"
+    }
+    },
+    {"Gambeson": {
+        "Type": "Light",
+        "Defend": "10",
+        "Block_Bonus": null,
+        "Agility": "10",
+        "Dodge_Bonus": "1/2 Dodge",
+        "Mobility": "3",
+        "Durability": "6",
+        "Features": "Nimble 1",
+        "Techniques": "Nimble 2",
+        "Vital1": "1d6",
+        "Vital2": "2d6",
+        "Vital3": "2d6 + 1/2 Dodge"
+    }
+    },
+    {"Chain Mail": {
+        "Type": "Medium",
+        "Defend": "12",
+        "Block_Bonus": "1/2 Block",
+        "Agility": "12",
+        "Dodge_Bonus": "1/2 Dodge",
+        "Mobility": "2",
+        "Durability": "8",
+        "Features": "Fortified 1",
+        "Techniques": "Fortified 2",
+        "Vital1": "1d6",
+        "Vital2": "2d6",
+        "Vital3": "2d6 + 1/2 Dodge or 1/2 Block"
+    }
+    },
+    {"Splint Mail": {
+        "Type": "Medium",
+        "Defend": "13",
+        "Block_Bonus": "1/2 Block",
+        "Agility": "10",
+        "Dodge_Bonus": null,
+        "Mobility": "2",
+        "Durability": "8",
+        "Features": "Fortified 1",
+        "Techniques": "Fortified 2",
+        "Vital1": "1d6",
+        "Vital2": "2d6 + 1/2 Block",
+        "Vital3": "3d6 + 1/2 Block"
+    }
+    },
+    {"Breast Plate": {
+        "Type": "Medium",
+        "Defend": "9",
+        "Block_Bonus": null,
+        "Agility": "11",
+        "Dodge_Bonus": "1/2 Dodge",
+        "Mobility": "3",
+        "Durability": "8",
+        "Features": "Nimble 1",
+        "Techniques": " Nimble 2",
+        "Vital1": "1d6 + 1/2 Dodge",
+        "Vital2": "2d6 + 1/2 Block",
+        "Vital3": "3d6 + 1/2 Block"
+    }
+    },
+    {"Scale Mail": {
+        "Type": "Heavy",
+        "Defend": "13",
+        "Block_Bonus": "1/2 Block",
+        "Agility": "8",
+        "Dodge_Bonus": null,
+        "Mobility": "2",
+        "Durability": "7",
+        "Features": "Fortified 1",
+        "Techniques": "Fortified 2",
+        "Vital1": "1d6 + 1/2 Block",
+        "Vital2": "2d6 + 1/2 Block",
+        "Vital3": "3d6 + 1/2 Block"
+    }
+    },
+    {"Plate Mail": {
+        "Type": "Heavy",
+        "Defend": "14",
+        "Block_Bonus": "1/2 Block",
+        "Agility": "7",
+        "Dodge_Bonus": null,
+        "Mobility": "1",
+        "Durability": "9",
+        "Features": "Fortified 1, Braced 1",
+        "Techniques": "Fortified 2, Braced 2",
+        "Vital1": "1d6 + 1/2 Block",
+        "Vital2": "2d6 + 1/2 Block",
+        "Vital3": "3d6 + Block"
+    }
+    },
+    {"Full Plate": {
+        "Type": "Heavy",
+        "Defend": "15",
+        "Block_Bonus": "Block",
+        "Agility": "6",
+        "Dodge_Bonus": null,
+        "Mobility": "0",
+        "Durability": "10",
+        "Features": "Fortified 1, Braced 1",
+        "Techniques": "Fortified 2, Braced 2",
+        "Vital1": "1d6 + Block",
+        "Vital2": "2d6 + Block",
+        "Vital3": "3d6 + Block"
+    }
+    }
+]

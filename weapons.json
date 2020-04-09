@@ -1,0 +1,255 @@
+[
+    {"weapon_name":{
+        "Type": "string(handed)",
+        "Damage_Type": "string(damage types)",
+        "Crit_Damage": "int",
+        "Range": "int",
+        "AP": "int",
+        "Features": "strings(list from weapons key)",
+        "Techniqiues": "strings(list from weapons key)",
+        "Description": "string(long form)"
+    }
+    },
+    {"Dagger":{
+        "Type": "One Handed",
+        "Damage_Type": "Piercing",
+        "Crit_Damage": "2",
+        "Range": "1",
+        "AP": "4",
+        "Features": "Dual Wielding 1",
+        "Techniqiues": "Balance 2, Dual Weilding 2",
+        "Description": ""
+    }
+    },
+    {"FLail":{
+        "Type": "One Handed",
+        "Damage_Type": "Bludgeoning",
+        "Crit_Damage": "2",
+        "Range": "2",
+        "AP": "6",
+        "Features": "Momentum 1, Grappling 1",
+        "Techniqiues": "Momentum 2 Grappling 2",
+        "Description": ""
+    }
+    },
+    {"War Hammer":{
+        "Type": "One Handed",
+        "Damage_Type": "Bludgeoning",
+        "Crit_Damage": "2",
+        "Range": "1",
+        "AP": "6",
+        "Features": "Crippling 1",
+        "Techniqiues": "Crippling 2",
+        "Description": ""
+    }
+    },
+    {"Hand Axe":{
+        "Type": "One Handed",
+        "Damage_Type": "Slashing",
+        "Crit_Damage": "2",
+        "Range": "1",
+        "AP": "6",
+        "Features": "Cleave 1",
+        "Techniqiues": "Cleave 2",
+        "Description": ""
+    }
+    },
+    {"Katana":{
+        "Type": "One Handed",
+        "Damage_Type": "Slashing",
+        "Crit_Damage": "2",
+        "Range": "1",
+        "AP": "5",
+        "Features": "Balance 1, Cleave 1, Dueling 1",
+        "Techniqiues": "Balance 2; Dual Wielding 1; Cleave 2; Dueling 2",
+        "Description": ""
+    }
+    },
+    {"Long Sword":{
+        "Type": "One Handed",
+        "Damage_Type": "Slashing",
+        "Crit_Damage": "2",
+        "Range": "1",
+        "AP": "6",
+        "Features": "Versatile 1",
+        "Techniqiues": "Versatile 2 Cleave 1, Dueling 1",
+        "Description": ""
+    }
+    },
+    {"Mace":{
+        "Type": "One Handed",
+        "Damage_Type": "Bludgeoning",
+        "Crit_Damage": "2",
+        "Range": "1",
+        "AP": "6",
+        "Features": "Crippling 1, Momentum 1",
+        "Techniqiues": "Crippling 2; Momentum 2; Dueling 1",
+        "Description": ""
+    }
+    },
+    {"Rapier":{
+        "Type": "One Handed",
+        "Damage_Type": "Piercing",
+        "Crit_Damage": "2",
+        "Range": "1",
+        "AP": "6",
+        "Features": "Dueling 1, Balance 1",
+        "Techniqiues": "Balance 2; Dual Wielding 2; Dueling 2",
+        "Description": ""
+    }
+    },
+    {"Short Sword":{
+        "Type": "One Handed",
+        "Damage_Type": "Slashing",
+        "Crit_Damage": "2",
+        "Range": "1",
+        "AP": "6",
+        "Features": "Balance 1 Versatile 1",
+        "Techniqiues": "Balance 2, Dual Wielding 1, Versatile 2",
+        "Description": ""
+    }
+    },
+    {"Whip":{
+        "Type": "One Handed",
+        "Damage_Type": "Slashing",
+        "Crit_Damage": "2",
+        "Range": "3",
+        "AP": "6",
+        "Features": "Grappling 1",
+        "Techniqiues": "Grappling 2",
+        "Description": ""
+    }
+    },
+    {"Maul":{
+        "Type": "Two Handed",
+        "Damage_Type": "Bludgeoning",
+        "Crit_Damage": "3",
+        "Range": "1",
+        "AP": "8",
+        "Features": "Heavy 2, Momentum 1, Crippling 1",
+        "Techniqiues": "Momentum 2, Crippling 2",
+        "Description": ""
+    }
+    },
+    {"Great Sword":{
+        "Type": "Two Handed",
+        "Damage_Type": "Slashing",
+        "Crit_Damage": "3",
+        "Range": "1",
+        "AP": "7",
+        "Features": "Heavy 1, Versatile 1, Rend 1, Cleave 1",
+        "Techniqiues": "Cleave 2, Rend 2, Versatile 2",
+        "Description": ""
+    }
+    },
+    {"Battle Axe":{
+        "Type": "Two Handed",
+        "Damage_Type": "Slashing",
+        "Crit_Damage": "3",
+        "Range": "1",
+        "AP": "7",
+        "Features": "Heavy 1, Cleave 1, Rend 1",
+        "Techniqiues": "Cleave 2, Rend 2",
+        "Description": ""
+    }
+    },
+    {"Spear":{
+        "Type": "Two Handed",
+        "Damage_Type": "Piercing",
+        "Crit_Damage": "3",
+        "Range": "2",
+        "AP": "7",
+        "Features": "Balance 1, Momentum 1",
+        "Techniqiues": "Balance 2, Momentum 2",
+        "Description": ""
+    }
+    },
+    {"Lance":{
+        "Type": "Two Handed",
+        "Damage_Type": "Piercing",
+        "Crit_Damage": "3",
+        "Range": "2",
+        "AP": "8",
+        "Features": "Momentum 2",
+        "Techniqiues": "Momentum 3",
+        "Description": ""
+    }
+    },
+    {"Glaive":{
+        "Type": "Two Handed",
+        "Damage_Type": "Slashing",
+        "Crit_Damage": "3",
+        "Range": "2",
+        "AP": "7",
+        "Features": "Balance 1, Momentum 1, Versatile 1",
+        "Techniqiues": "Balance 2, Momentum 2, Versatile 2",
+        "Description": ""
+    }
+    },
+    {"Heavy Crossbow":{
+        "Type": "Ranged",
+        "Damage_Type": "Piercing",
+        "Crit_Damage": "3",
+        "Range": "15",
+        "AP": "2",
+        "Features": "Crippling 1",
+        "Techniqiues": "Crippling 2",
+        "Description": ""
+    }
+    },
+    {"Javelin":{
+        "Type": "Ranged",
+        "Damage_Type": "Piercing",
+        "Crit_Damage": "3",
+        "Range": "5",
+        "AP": "6",
+        "Features": "Momentum 1",
+        "Techniqiues": "Momentum 2",
+        "Description": ""
+    }
+    },
+    {"Light Crossbow":{
+        "Type": "Ranged",
+        "Damage_Type": "Piercing",
+        "Crit_Damage": "2",
+        "Range": "5",
+        "AP": "2",
+        "Features": "",
+        "Techniqiues": "Balance 1",
+        "Description": ""
+    }
+    },
+    {"Longbow":{
+        "Type": "Ranged",
+        "Damage_Type": "Piercing",
+        "Crit_Damage": "2",
+        "Range": "15",
+        "AP": "6",
+        "Features": "Momentum 1",
+        "Techniqiues": "Momentum 2",
+        "Description": ""
+    }
+    },
+    {"Recurve Bow":{
+        "Type": "Ranged",
+        "Damage_Type": "Piercing",
+        "Crit_Damage": "2",
+        "Range": "5",
+        "AP": "6",
+        "Features": "Balance 1",
+        "Techniqiues": "Balance 2",
+        "Description": ""
+    }
+    },
+    {"Throwing Knives":{
+        "Type": "Ranged",
+        "Damage_Type": "Piercing",
+        "Crit_Damage": "3",
+        "Range": "5",
+        "AP": "4",
+        "Features": "Balance 1",
+        "Techniqiues": "Balance 2",
+        "Description": ""
+    }
+    }
+]
