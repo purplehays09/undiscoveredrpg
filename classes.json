@@ -91,6 +91,7 @@
             "Mobility Ability": "You can charge your elemental weapon by moving 3 yards.",
             "Special Ability": "You can charge a Conductive object within your range. The first three targets that walk through the range of the object must roll a Concentration check or become an Elemental Weapon."
         }
+    
     }
     },
     {"Arcanist":{
