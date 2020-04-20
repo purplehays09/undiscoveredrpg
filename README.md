@@ -233,3 +233,45 @@ Equipment
 * Roleplaying_Special_Moves 
 * Combat_Special_Move 
 * Adventuring_Special_Moves 
+
+## Combat Flow
+
+[UML with Swimlanes](https://www.lucidchart.com/invitations/accept/118ed6d2-aac8-4f72-a2b3-e8b27545b983)
+
+**Start the Combat**
+* Start the combat Module
+* Import the PC NPC and Creature for all of the characters. 
+* Additionally, import the JSON reference objects for actions, materials, statuses, positions, weapons, armors, and classes
+* Start the combat encounter by each player and each NPC rolling initiative and adding their MP to the equation. Then sort the list of all players from highest to lowest
+
+**Start Round**
+* start the round class
+* Prompt the next player/GM in initiative order
+
+**Start Turn**
+* Start the Turn Class
+* While the player has > 0 AP
+    * if the player chooses to end their turn or runs out of AP end their turn
+* Prompt the player to move or make actions
+* if the player chooses to move, ask them where they want to move and prompt them with options and minus MP based on selection
+* if the player chooses to make an action, trigger action class
+ 
+    **Start Action**
+* Start the action class
+* Initialize the class from the action "Name" that was selected
+* Assign all of the action.json elements of the selected action to the instance of the python class
+* If the Action_Type is "DC", roll the d20 add the "Stat" and the "Skill" bonus from the character and push back to the GM to determine success
+* Elif the Action_Type is "Roll" roll the d20 add the "Stat" and the "Skill" bonus from the character and determine effect from the Payload
+* If the Action_Type is Contest, select the target for the action, roll the d20 add the "Stat" and the "Skill" bonus from the character, prompt the target to roll the d20 add the "Stat" and the "Skill" bonus from the their "Reaction section. Determine the victor and apply the effect
+* If the Type is Special, create special actions for these 5 moves as python classes
+* once the move is resolved, minus the AP from the targets and go back to the While loop
+    **End Action Return to Turn**
+        
+* If the player is out of AP end their turn, if not, return to the loop
+
+**End Turn Return to Round**
+
+* When all combatants are finished with their turns, start the round loop over
+
+* When all combatants on one side die or suspend combat, End Combat
+   
