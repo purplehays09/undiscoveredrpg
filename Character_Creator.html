@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Character Creator</title>
+</head>
+<body>
+    <div class="container-fluid" id="Character Creator">
+        <p><h2>Welcome to the world of Undiscovered!</h2>
+            <h4><big>Basic Information</big></h4>
+        </p>
+        <form action="{{ url_for('feedback') }}" method="post">
+            <div class="form-group">
+
+                <!-- Get their name -->
+                <label class="sr-only" for="name">Hi, my name is </label>
+                <input class="form-control" id="name" placeholder="Finnias Driscilia" type="text" maxlength="150"></input>
+            </div>
+
+            <!-- Get their race 
+            I think I am also going to insist on getting their subrace on here but I don't have the conditional logic in flask to do this yet
+            -->
+            <div class="form-group">
+                <label class="sr-only" for="race">I am a </label>
+                <select class="form-control" id="race">
+                    <option selected>Human</option>
+                    <option>Elf</option>
+                    <option>Dwarf</option>
+                    <option>Orc</option>
+                    <option>Halfling</option>
+                    <option>Dragonkin</option>
+                    <option>Skitter</option>
+                    <option>Bugbear</option>
+                </select>
+            </div>
+
+            <!-- Have them enter a physical trademark -->
+            <div>
+                <label class="sr-only" for="trademark">The first thing people notice about my appearance is my</label>
+                <input id="trademark" type="text" list="trademarks" placeholder="Select from list or fill in yourself"/>
+                <datalist id="trademarks">
+                    <option value="Scar over my eye"></option>
+                    <option value="Rosy cheeks"></option>
+                    <option value="Gap Teeth"></option>
+                    <option value="Different Colored eyes"></option>
+                </datalist>
+
+            </div>
+
+
+            <!-- Have them enter a quirk -->
+            <div>
+                <label class="sr-only" for="quirk">The oddest thing about me is</label>
+                <input id="quirk" type="text" list="quirks" placeholder="Select from list or fill in yourself"/>
+                <datalist id="quirks">
+                    <option value="I always sing when I pee and I pee a lot"></option>
+                    <option value="I have to flirt with every large woman I see"></option>
+                    <option value="I can't let others know that I am a virgin"></option>
+                    <option value="I steal as many buttons as possible"></option>
+                </datalist>
+
+            </div>
+
+            <h4><big>Your Story</big></h4>
+
+            <!-- Get their background  -->
+            <div>
+                <label class="sr-only" for="background">Before becoming an adventurer I was a</label>
+                <select class="form-control" id="backgrounds">
+                    <option selected>Soldier</option>
+                    <option>Homemaker</option>
+                    <option>Student</option>
+                    <option>Hermit</option>
+                    <option>Thief</option>
+                    <option>Artisan</option>
+                    <option>Harlot</option>
+                    <option>Bounty Hunter</option>
+                </select>
+
+            </div>
+
+            <!-- Get their call-to-actions  -->
+            <div>
+                <label class="sr-only" for="call-to-action">I left that life and became an adventurer when</label>
+                <input id="call-to-action" type="text" list="call-to-actions" placeholder="Select from list or fill in yourself"/>
+                <datalist id="call-to-actions">
+                    <option value="My family was murdered"></option>
+                    <option value="I was wrongfully arrested"></option>
+                    <option value="I got bored"></option>
+                    <option value="I got in a barfight with my mother"></option>
+                </datalist>
+
+            </div>
+
+            <!-- Get their mission here  -->
+            <div>
+                <label class="sr-only" for="mission">My main goal now is to</label>
+                <textarea class="form-control" id="fb" placeholder="Enter your main goal here..." type="text" maxlength="500"></textarea>
+            </div>
+
+            <!-- Get their relationships here  -->
+            <div>
+                <label class="sr-only" for="relationship">My most significant relationship is with my</label>
+                <input id="relationship" type="text" list="relationships" placeholder="Select from list or fill in yourself"/>
+                <datalist id="relationships">
+                    <option value="Mother/Father"></option>
+                    <option value="Sibling"></option>
+                    <option value="Friend"></option>
+                    <option value="Coworker"></option>
+                    <option value="Nemesis"></option>
+                </datalist>
+
+            </div>
+
+            <!-- Get their value for self here  -->
+            <p>
+                <label class="sr-only" for="value-self">I feel that I am good when I have</label>
+                <input id="value-self" type="text" list="values-self" placeholder="Select from list or fill in yourself"/>
+                <datalist id="values-self">
+                    <option value="Kindness"></option>
+                    <option value="Ambition"></option>
+                    <option value="Justice"></option>
+                    <option value="Humility"></option>
+                    <option value="Love"></option>
+                    <option value="Greed"></option>
+                </datalist>
+                <div>Because of this, my instinct is</div>
+                <label class="sr-only" for="instinct-self">I always</label>
+                <input id="instinct-I-always" type="text" placeholder="accept a duel">
+                <label class="sr-only" for="instinct-self">I never</label>
+                <input id="instinct-I-never" type="text" placeholder="go to bed hungry">
+            </p>
+
+
+            <!-- Get value for others here  -->
+            <p>
+                <label class="sr-only" for="value-others">I feel that others are good when they have</label>
+                <input id="value-others" type="text" list="values-others" placeholder="Select from list or fill in yourself"/>
+                <datalist id="values-others">
+                    <option value="Kindness"></option>
+                    <option value="Ambition"></option>
+                    <option value="Justice"></option>
+                    <option value="Humble"></option>
+                    <option value="Loving"></option>
+                </datalist>
+                <div>Because of this, my instinct is</div>
+                <label class="sr-only" for="instinct-others">I always</label>
+                <input id="instinct-I-always" type="text" placeholder="debate politics">
+                <label class="sr-only" for="instinct-others">I never</label>
+                <input id="instinct-I-never" type="text" placeholder="forget compassion of others">
+            </p>
+
+            <!-- Get values for society here  -->
+            <p>
+                <label class="sr-only" for="value-society">I feel that others are good when they have</label>
+                <input id="value-society" type="text" list="values-society" placeholder="Select from list or fill in yourself"/>
+                <datalist id="values-society">
+                    <option value="Kindness"></option>
+                    <option value="Ambition"></option>
+                    <option value="Justice"></option>
+                    <option value="Humble"></option>
+                    <option value="Loving"></option>
+                </datalist>
+                <div>Because of this, my instinct is</div>
+                <label class="sr-only" for="instinct-society">I always</label>
+                <input id="instinct-I-always" type="text" placeholder="obey authority">
+                <label class="sr-only" for="instinct-society">I never</label>
+                <input id="instinct-I-never" type="text" placeholder="let the rich go unpunished">
+            </p>
+            
+
+            <h4><big>Combat</big></h4>
+
+            <!-- Get class here  -->
+            <div class="form-group">
+                <label class="sr-only" for="class">The life of an adventurer is dangerous. When a fight breaks out, I rely on my skills as a</label>
+                <select class="form-control" id="class">
+                    <option selected>Warrior</option>
+                    <option>Brute</option>
+                    <option>Ranger</option>
+                    <option>Rogue</option>
+                    <option>Druid</option>
+                    <option>Sorcer</option>
+                    <option>Arcanist</option>
+                </select>
+            </div>
+
+            <!-- Get weapon and armor here -->
+            <div class="form-group">
+                <label class="sr-only" for="weapon">A battle can start at any time. Because of this, I am armed with (a)</label>
+                <select class="form-control" id="weapon">
+                    <option selected>Daggers</option>
+                    <option>Long Sword</option>
+                    <option>Bow</option>
+                    <option>Spear</option>
+                    <option>Mace</option>
+                    <option>Great Sword</option>
+                    <option>Crossbow</option>
+                </select>
+                <label class="sr-only" for="weapon">To defend myself, I am almost always wearing</label>
+                <select class="form-control" id="armor">
+                    <option selected>Unarmored</option>
+                    <option>Leather Armor</option>
+                    <option>Chain Mail</option>
+                    <option>Splint Mail</option>
+                    <option>Round Shield</option>
+                </select>
+            </div>
+
+            <h4><big>Attributes and Skills</big></h4>
+
+            <!-- Get best skill  -->
+            <div class="form-group">
+                <label class="sr-only" for="player-attributes">Above all else, I value my</label>
+                <select class="form-control" id="player-attributes-1">
+                    <option selected>Strength</option>
+                    <option>Dexterity</option>
+                    <option>Constitution</option>
+                    <option>Intelligence</option>
+                    <option>Wisdom</option>
+                    <option>Charisma</option>
+                </select>
+            </div>
+
+            <!-- Get second best skill  -->
+            <div class="form-group">
+                <label class="sr-only" for="player-attributes">If that can’t cut it, I fall back on my</label>
+                <select class="form-control" id="player-attributes-2">
+                    <option selected>Strength</option>
+                    <option>Dexterity</option>
+                    <option>Constitution</option>
+                    <option>Intelligence</option>
+                    <option>Wisdom</option>
+                    <option>Charisma</option>
+                </select>
+            </div>
+
+            <!-- Get 2nd worst here  -->
+            <div class="form-group">
+                <label class="sr-only" for="player-attributes">I have less</label>
+                <select class="form-control" id="player-attributes-5">
+                    <option selected>Strength</option>
+                    <option>Dexterity</option>
+                    <option>Constitution</option>
+                    <option>Intelligence</option>
+                    <option>Wisdom</option>
+                    <option>Charisma</option>
+                </select>
+                <label class="sr-only" for="player-attributes">than most people</label>
+            </div>
+
+            <!-- Get worst here  -->
+            <div class="form-group">
+                <label class="sr-only" for="player-attributes">My</label>
+                <select class="form-control" id="player-attributes-6">
+                    <option selected>Strength</option>
+                    <option>Dexterity</option>
+                    <option>Constitution</option>
+                    <option>Intelligence</option>
+                    <option>Wisdom</option>
+                    <option>Charisma</option>
+                </select>
+                <label class="sr-only" for="player-attributes">is definitely my weakest attribute</label>
+            </div>
+
+            <h4><big>Attributes and Skills</big></h4>
+
+            <!-- Get trusty Item  -->
+            <div class="form-group">
+                <label class="sr-only" for="trusty-item">Everywhere I go, I always carry my trusty</label>
+                <select class="form-control" id="trusty-item">
+                    <option selected>Pocket Knife</option>
+                    <option>Rope</option>
+                    <option>Backpack</option>
+                    <option>Lantern</option>
+                    <option>Trowel</option>
+                </select>
+                <label class="sr-only" for="trusty-item">with me</label>
+            </div>
+
+            <!-- Get starting kit here  -->
+            <div class="form-group">
+                <label class="sr-only" for="kit">In my spare time, I regularly use my</label>
+                <select class="form-control" id="kit">
+                    <option selected>Brewerst kit</option>
+                    <option>Survival Kit</option>
+                    <option>Hunting Kit</option>
+                    <option>Smiths Kit</option>
+                    <option>Sewing Kit</option>
+                </select>
+            </div>
+
+            <h2>All done!</h2>
+            <!-- Submit button  -->
+            <div class="form-group">
+                <button class="btn btn-default" type="submit">Submit!</button>
+            </div>
+        </form>
+    </div>
+
+</select>
+</body>
+</html>
