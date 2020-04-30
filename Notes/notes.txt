@@ -1,66 +1,48 @@
-Vision and Direction
 
-Local Functionality
-GM mode and Player Mode
-Players and GMs should have 2 different modes of the app with the needed pages and functions that apply to the given needs
-GM
-Giving out XP and statuses to players
-Managing Initiative 
-Bring up targeted players stats and bonuses
-Push and Pull functions between players 
-Player 
-separate modes for different scenarios to clean up ui
-Combat
-Weapon stats
-Initiative
-Combat actions
-Reactions
-Special moves
-Power Level
-statuses
-Role Playing
-Special moves
-Notes
-Hierarchy of values
-Charisma scores
-Adventuring
-Skills
-Special moves
-Statuses
-Equipment
-Shared notes and Campaign Tracker
-Player’s Manual with class references and special moves
-Shared Message board
-Downtime Activities
+--- Links Layout for Web Pages ---
 
-Global Functionality
-Group Finder
-NO personal information
-Relative in game location
-Relative real world location (city only)
-Average Level
-Looking for players or not
-Associated in game factions
-Frequency
-Player experience level
-In Game Market
-Trade Guild quest and approved loot for imperial currency 
-In Game Discovery Market
-User Generated content like filling out a pokedex
-monsters
-locations
-Special moves
-Gear
-Art
-Quests
-Player run Guild Boards
-Message
-Voting
-Quests
-Map
-Relative Map of Guild jurisdiction 
-Cities
-Approved landmarks and Waterways
-Community Forums
-News updates and Large Scale Events
-Creation and balancing systems and engine 
+Home
+    Directory
+    News and Updates
+    Message Board / Player Forum
+    
+    Login
+        Player Portal
+                Character Select
+                    Character Creator
+                    Campaign Manager
+                        Character Specific Notes
+                        Campaign Specific Notes
+                Character Sheet
+                    Role Playing
+                    Adventuring
+                    Combat Stats    
+                Reference Manual
+                Find Group
+        GM Portal
+            Campaign Selection
+                Game Start
+                    Select from open groups
+                    Find Group
+                Campaign Manager
+                Campaign Creator
+                    Map Creator
+                    Plot Map
+                Encounter Creator
+                    NPC Creator
+            GM Guides
+                Assorted
+
+    Sign Up
+
+    Community Center 
+        Share
+        * Maps
+        * Campaign
+        * Creatures
+        * NPC'S
+        * Art
+        * Weapons
+        * Classes
+        * Other   
+    About
