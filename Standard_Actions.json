@@ -1,7 +1,4 @@
-[
-  {
-    "Name": [
-        {
+"Name": {
             "Type": "Type",
             "Stat": "Stat",
             "Skill": "Skill",
@@ -12,12 +9,8 @@
             "Action_Type": "Action_Type",
             "Reaction": "Reaction",
             "Payload": "Payload"
-        }
-    ]
-  },
-  {
-    "Attack":[
-        {
+        },
+    "Attack":{
             "Type": "Action",
             "Stat": "STR",
             "Skill": "Muscle",
@@ -28,12 +21,8 @@
             "Action_Type": "Special",
             "Reaction": "Standard_Reactions",
             "Payload": "Store in weapon"
-        }
-    ]
-  },
-  {
-    "Disarm":[
-        {
+        },
+    "Disarm":{
             "Type": "Action",
             "Stat": "STR",
             "Skill": "Muscle",
@@ -44,12 +33,8 @@
             "Action_Type": "Special",
             "Reaction": "Muscle",
             "Payload": "target_selected_equipment = None"
-        }
-    ]
-  },
-  {
-    "Throw":[
-        {
+        },
+    "Throw":{
             "Type": "Action",
             "Stat": "STR",
             "Skill": "Muscle",
@@ -60,12 +45,8 @@
             "Action_Type": "Special",
             "Reaction": "Muscle || Finesse",
             "Payload": ""
-        }
-    ]
-  },
-  {
-    "Choke":[
-        {
+        },
+    "Choke":{
             "Type": "Action",
             "Stat": "STR",
             "Skill": "Wrestle",
@@ -76,12 +57,8 @@
             "Action_Type": "Contest",
             "Reaction": "Muscle",
             "Payload": "target_suffocating_status_stage += 1"
-        }
-    ]
-  },
-  {
-    "Grapple":[
-        {
+        },
+    "Grapple":{
             "Type": "Action",
             "Stat": "STR",
             "Skill": "Wrestle",
@@ -92,12 +69,8 @@
             "Action_Type": "Contest",
             "Reaction": "Muscle",
             "Payload": "target_restrained_status_stage +=1"
-        }
-    ]
-  },
-  {
-    "Strike":[
-        {
+        },
+    "Strike":{
             "Type": "Action",
             "Stat": "STR",
             "Skill": "Brawl",
@@ -108,12 +81,8 @@
             "Action_Type": "Contest",
             "Reaction": "Standard_Reactions",
             "Payload": "target_stunned_status_stage +=1"
-        }
-    ]
-  },
-  {
-    "Shove":[
-        {
+        },
+    "Shove":{
             "Type": "Action",
             "Stat": "STR",
             "Skill": "Brawl",
@@ -124,12 +93,8 @@
             "Action_Type": "Contest",
             "Reaction": "Muscle",
             "Payload": "target_prone_status_stage +=1"
-        }
-    ]
-  },
-  {
-    "Tackle":[
-        {
+        },
+    "Tackle":{
             "Type": "Action",
             "Stat": "STR",
             "Skill": "Brawl",
@@ -140,12 +105,8 @@
             "Action_Type": "Contest",
             "Reaction": "Muscle",
             "Payload": "target_prone_status_stage +=1\ntarget_restrained_status_stage +=1\nsource_prone_status_stage +=1\nsource_restrained_status_stage +=1"
-        }
-    ]
-  },
-  {
-    "Leap":[
-        {
+        },
+    "Leap":{
             "Type": "Movement",
             "Stat": "STR",
             "Skill": "Jump",
@@ -156,12 +117,8 @@
             "Action_Type": "Roll",
             "Reaction": "",
             "Payload": "horizontal_movement_range = source_total//5\nvertical_movement_range = source_total//10"
-        }
-    ]
-  },
-  {
-    "Lunge":[
-        {
+        },
+    "Lunge":{
             "Type": "Movement",
             "Stat": "STR",
             "Skill": "Jump",
@@ -172,12 +129,8 @@
             "Action_Type": "Roll",
             "Reaction": "",
             "Payload": "source_momentum_stage += (source_total//10)"
-        }
-    ]
-  },
-  {
-    "Climb":[
-        {
+        },
+    "Climb":{
             "Type": "Movement",
             "Stat": "STR",
             "Skill": "Jump",
@@ -188,12 +141,8 @@
             "Action_Type": "Roll",
             "Reaction": "",
             "Payload": ""
-        }
-    ]
-  },
-  {
-    "Acrobatics":[
-        {
+        },
+    "Acrobatics":{
             "Type": "Movement",
             "Stat": "DEX",
             "Skill": "Coordination",
@@ -204,12 +153,8 @@
             "Action_Type": "DC",
             "Reaction": "",
             "Payload": ""
-        }
-    ]
-  },
-  {
-    "Dive":[
-        {
+        },
+    "Dive":{
             "Type": "Reaction",
             "Stat": "DEX",
             "Skill": "Coordination",
@@ -220,12 +165,8 @@
             "Action_Type": "Reaction",
             "Reaction": "",
             "Payload": "action_result = \"Failure\"\nsource_prone_stage +=1"
-        }
-    ]
-  },
-  {
-    "Dodge":[
-        {
+        },
+    "Dodge":{
             "Type": "Reaction",
             "Stat": "DEX",
             "Skill": "Coordination",
@@ -236,12 +177,8 @@
             "Action_Type": "Reaction",
             "Reaction": "",
             "Payload": "action_result = \"Failure\""
-        }
-    ]
-  },
-  {
-    "Parry":[
-        {
+        },
+    "Parry":{
             "Type": "Reaction",
             "Stat": "DEX",
             "Skill": "Finesse",
@@ -251,13 +188,21 @@
             "Dice_Roll": "d20",
             "Action_Type": "Reaction",
             "Reaction": "",
+            "Payload": "action_result = \"Failure\""
+        },
+    "Riposte":{
+            "Type": "Reaction",
+            "Stat": "DEX",
+            "Skill": "Finesse",
+            "Speed": "2",
+            "Range": "1",
+            "Description": "\u2022Trigger - After a successful Parry \nEffect:\n\u2022Counter attack an enemy. Make a Riposte check against the opponents Parry. On a success, the target takes the effect of an Attack action\n\u2022You can choose to replace your Finesse mod with a -2 Muscle mod",
+            "Dice_Roll": "d20",
+            "Action_Type": "Reaction",
+            "Reaction": "",
             "Payload": "source_vitality -= 1"
-        }
-    ]
-  },
-  {
-    "Steal":[
-        {
+        },
+    "Steal":{
             "Type": "Action",
             "Stat": "DEX",
             "Skill": "Sleight of Hand",
@@ -268,364 +213,8 @@
             "Action_Type": "Contest",
             "Reaction": "Perception",
             "Payload": ""
-        }
-    ]
-  },
-  {
-    "Trip":[
-        {
-            "Type": "Reaction",
-            "Stat": "DEX",
-            "Skill": "Sleight of Hand",
-            "Speed": "2",
-            "Range": "1",
-            "Description": "\u2022Trigger - A target moves through a space adjacent to you\nEffect:\n\u2022Make a Trip check contested against a target\u2019s +3 Coordination check. On a success the target takes a stage of Prone \n\u2022Prone stage = Contest difference/5 rounded down\n\u2022Each Momentum stage -3 from the target\u2019s Coordination check",
-            "Dice_Roll": "d20",
-            "Action_Type": "Reaction",
-            "Reaction": "",
-            "Payload": ""
-        }
-    ]
-  },
-  {
-    "Hide":[
-        {
-            "Type": "Movement",
-            "Stat": "DEX",
-            "Skill": "Stealth",
-            "Speed": "2",
-            "Range": "0",
-            "Description": "\u2022Attempt to hide away from view. Make a Hide check. DC determined by the GM. On a success, you gain 1 stage of Hidden",
-            "Dice_Roll": "d20",
-            "Action_Type": "DC",
-            "Reaction": "",
-            "Payload": ""
-        }
-    ]
-  },
-  {
-    "Defend":[
-        {
-            "Type": "Reaction",
-            "Stat": "CON",
-            "Skill": "Endurance",
-            "Speed": "1",
-            "Range": "0",
-            "Description": "\u2022Trigger - An Attack or special move is declared against you or you are in the Area of Effect of an Attack or special move.\nEffect:\n\u2022Roll 1d6 and add your Defend bonus (base + armor) to contest the Attack or evade the effect. On success, you take no damage",
-            "Dice_Roll": "d6",
-            "Action_Type": "Reaction",
-            "Reaction": "",
-            "Payload": "action_result = \"Failure\""
-        }
-    ]
-  },
-  {
-    "Guard Vitals":[
-        {
-            "Type": "Reaction",
-            "Stat": "CON",
-            "Skill": "Endurance",
-            "Speed": "0 RP",
-            "Range": "0",
-            "Description": "\u2022Trigger - An Attack or special move is declared against a target's Vitals\nEffect:\n\u2022Vital 1 - Roll 2d6 and add your Defend OR Dodge armor bonus to contest the Attack or evade the effect. On success, you take no damage\n\u2022Vital 2 - Roll 3d6 and add your Defend OR Dodge armor bonus to contest the Attack or evade the effect. On success, you take no damage\n\u2022Vital 1 - Roll 4d6 and add your Defend OR Dodge armor bonus to contest the Attack or evade the effect. On success, you take no damage",
-            "Dice_Roll": "d6",
-            "Action_Type": "Special",
-            "Reaction": "",
-            "Payload": "action_result = \"Failure\"\ntarget_RP +=2"
-        }
-    ]
-  },
-  {
-    "Brace":[
-        {
-            "Type": "Action",
-            "Stat": "CON",
-            "Skill": "Endurance",
-            "Speed": "2",
-            "Range": "0",
-            "Description": "\u2022Roll a Brace check to give yourself an additional d6's to use on reactions until the start of your next turn. \n\u2022Number of d6's = the Brace check /5 (rounded down)",
-            "Dice_Roll": "d20",
-            "Action_Type": "Special",
-            "Reaction": "",
-            "Payload": ""
-        }
-    ]
-  },
-  {
-    "Charge Power":[
-        {
-        "Type": "Action",
-        "Stat": "CON",
-        "Skill": "Concentration",
-        "Speed": "2",
-        "Range": "0",
-        "Description": "\u2022Roll a Charge Power check to gain momentum towards your next Power Rank \n\u2022DC = 10 + Power Rank",
-        "Dice_Roll": "d20",
-        "Action_Type": "Roll",
-        "Reaction": "",
-        "Payload": ""
-        }
-    ]
-  },
-  {
-    "Concentrate":[
-        {
-            "Type": "Action",
-            "Stat": "CON",
-            "Skill": "Concentration",
-            "Speed": "2",
-            "Range": "0",
-            "Description": "\u2022Maintain Concentration on the spell or effect. DC = 8 + power rank of spell + number of turns concentrated.",
-            "Dice_Roll": "d20",
-            "Action_Type": "Roll",
-            "Reaction": "",
-            "Payload": ""
-        }
-    ]
-  },
-  {
-    "Focus":[
-        {
-            "Type": "Action",
-            "Stat": "CON`",
-            "Skill": "Concentration",
-            "Speed": "2",
-            "Range": "0",
-            "Description": "\u2022Focus can be applied before any action to raise the minimum roll value. \n\u2022Roll a Focus check and divide it in half to make a focus value. On your following action, any dice roll below this focus value will be treated as the focus value instead of the dice value (except for Crit fails).",
-            "Dice_Roll": "d20",
-            "Action_Type": "Roll",
-            "Reaction": "",
-            "Payload": ""
-        }
-    ]
-  },
-  {
-    "Recover":[
-        {
-            "Type": "Action",
-            "Stat": "CON",
-            "Skill": "Vitality",
-            "Speed": "0",
-            "Range": "2",
-            "Description": "\u2022Roll a Recover Check to regain a damaged health block or mental status. DC = 8 + 1 per Debuff status currently affecting you AND Missing Health Block",
-            "Dice_Roll": "d20",
-            "Action_Type": "Roll",
-            "Reaction": "",
-            "Payload": ""
-        }
-    ]
-  },
-  {
-    "Enemy History":[
-        {
-            "Type": "Action",
-            "Stat": "INT",
-            "Skill": "Academic",
-            "Speed": "1",
-            "Range": "24",
-            "Description": "\u2022Tap knowledge of any historical record or mentions of this specific group. DC is determined by the GM",
-            "Dice_Roll": "d20",
-            "Action_Type": "DC",
-            "Reaction": "",
-            "Payload": ""
-        }
-    ]
-  },
-  {
-    "Arcana":[
-        {
-            "Type": "Action",
-            "Stat": "INT",
-            "Skill": "Arcane",
-            "Speed": "1",
-            "Range": "24",
-            "Description": "\u2022Tap knowledge of what magic is being used and what effects it has. DC is determined by the GM",
-            "Dice_Roll": "d20",
-            "Action_Type": "DC",
-            "Reaction": "",
-            "Payload": ""
-        }
-    ]
-  },
-  {
-    "Tactics":[
-        {
-            "Type": "Action",
-            "Stat": "INT",
-            "Skill": "Culture",
-            "Speed": "1",
-            "Range": "24",
-            "Description": "\u2022Roll a Tactics check to tap knowledge of any specific tactics used by the enemy's Stat Block. DC is determined by the GM",
-            "Dice_Roll": "d20",
-            "Action_Type": "DC",
-            "Reaction": "",
-            "Payload": ""
-        }
-    ]
-  },
-  {
-    "Search":[
-        {
-            "Type": "Action",
-            "Stat": "INT",
-            "Skill": "Investigation",
-            "Speed": "2",
-            "Range": "1",
-            "Description": "",
-            "Dice_Roll": "d20",
-            "Action_Type": "DC",
-            "Reaction": "",
-            "Payload": ""
-        }
-    ]
-  },
-  {
-    "Battlefield":[
-        {
-            "Type": "Action",
-            "Stat": "INT",
-            "Skill": "Nature",
-            "Speed": "1",
-            "Range": "24",
-            "Description": "\u2022Tap knowledge of any advantages or weaknesses presented on the battlefield. DC is determined by the GM",
-            "Dice_Roll": "d20",
-            "Action_Type": "DC",
-            "Reaction": "",
-            "Payload": ""
-        }
-    ]
-  },
-  {
-    "Evaluate Enemy":[
-        {
-            "Type": "Action",
-            "Stat": "WIS",
-            "Skill": "Insight",
-            "Speed": "1",
-            "Range": "24",
-            "Description": "\u2022Try to read an enemies motives strengths and difficulty. DC is Determined by the GM",
-            "Dice_Roll": "d20",
-            "Action_Type": "Contest",
-            "Reaction": "",
-            "Payload": ""
-        }
-    ]
-  },
-  {
-    "Coordinated Attack":[
-        {
-            "Type": "Action",
-            "Stat": "WIS",
-            "Skill": "Interaction",
-            "Speed": "6",
-            "Range": "12",
-            "Description": "\u2022Roll a Coordinated Attack check to invite an ally within range to perform actions (with you) in succession. \n\u2022You and your ally spend their 12 AP for the round to share a single turn and with a total combined AP for both of you equal to your Coordinated Attack check\n\u2022You are limited to movement and one action each.",
-            "Dice_Roll": "d20",
-            "Action_Type": "Special",
-            "Reaction": "",
-            "Payload": ""
-        }
-    ]
-  },
-  {
-    "Improvise":[
-        {
-            "Type": "Action",
-            "Stat": "WIS",
-            "Skill": "Interaction",
-            "Speed": "1",
-            "Range": "-",
-            "Description": "\u2022Find a branch for a quick weapon, kick dirt to put out a fire, or use your ingenuity to solve a quick problem. DC set by GM.",
-            "Dice_Roll": "d20",
-            "Action_Type": "DC",
-            "Reaction": "",
-            "Payload": ""
-        }
-    ]
-  },
-  {
-    "Bandage":[
-        {
-            "Type": "Action",
-            "Stat": "WIS",
-            "Skill": "Medicine",
-            "Speed": "2",
-            "Range": "1",
-            "Description": "\u2022Aid an ally by Healing a Health Block or 1 status (if applicable). DC determined by Status or GM",
-            "Dice_Roll": "d20",
-            "Action_Type": "Roll",
-            "Reaction": "",
-            "Payload": ""
-        }
-    ]
-  },
-  {
-    "Aim":[
-        {
-            "Type": "Action",
-            "Stat": "WIS",
-            "Skill": "Perception",
-            "Speed": "2",
-            "Range": "Attack Range",
-            "Description": "\u2022Roll an Aim check to improve the accuracy of your next attack (action or special move) against a single target you can see. Add your Aim Check total divided by 4 to your following attack roll. ",
-            "Dice_Roll": "d20",
-            "Action_Type": "Roll",
-            "Reaction": "",
-            "Payload": ""
-        }
-    ]
-  },
-  {
-    "Find Vitals":[
-        {
-            "Type": "Action",
-            "Stat": "WIS",
-            "Skill": "Survival",
-            "Speed": "2",
-            "Range": "24",
-            "Description": "\u2022Roll a Find Vitals to determine an enemies Vital points. The vital stage you learn is equal to your Find Vitals check divided by 10",
-            "Dice_Roll": "d20",
-            "Action_Type": "Contest",
-            "Reaction": "",
-            "Payload": ""
-        }
-    ]
-  },
-  {
-    "Taunt":[
-        {
-            "Type": "Action",
-            "Stat": "CHA",
-            "Skill": "Aggressive",
-            "Speed": "2",
-            "Range": "24",
-            "Description": "\u2022Roll a Taunt check against a target to inflict the Captivated Frightened, or Frenzied status to a target. DC determined by GM",
-            "Dice_Roll": "d20",
-            "Action_Type": "DC",
-            "Reaction": "",
-            "Payload": ""
-        }
-    ]
-  },
-  {
-    "Distract":[
-        {
-            "Type": "Action",
-            "Stat": "CHA",
-            "Skill": "Suave",
-            "Speed": "2",
-            "Range": "24",
-            "Description": "\u2022Roll a Distract check against a target to give a target a level of Flanked. DC determined by GM",
-            "Dice_Roll": "d20",
-            "Action_Type": "DC",
-            "Reaction": "",
-            "Payload": ""
-        }
-    ]
-  },
-  {
-    "Feint":[
-        {
+        },
+    "Feint":{
             "Type": "Action",
             "Stat": "CHA",
             "Skill": "Suave",
@@ -636,12 +225,260 @@
             "Action_Type": "Contest",
             "Reaction": "Evaluate Enemy",
             "Payload": ""
-        }
-    ]
-  },
-  {
-    "Pacify":[
-        {
+        },
+    "Trip":{
+            "Type": "Reaction",
+            "Stat": "DEX",
+            "Skill": "Sleight of Hand",
+            "Speed": "2",
+            "Range": "1",
+            "Description": "\u2022Trigger - A target moves through a space adjacent to you\nEffect:\n\u2022Make a Trip check contested against a target\u2019s +3 Coordination check. On a success the target takes a stage of Prone \n\u2022Prone stage = Contest difference/5 rounded down\n\u2022Each Momentum stage -3 from the target\u2019s Coordination check",
+            "Dice_Roll": "d20",
+            "Action_Type": "Reaction",
+            "Reaction": "",
+            "Payload": ""
+        },
+    "Hide":{
+            "Type": "Movement",
+            "Stat": "DEX",
+            "Skill": "Stealth",
+            "Speed": "2",
+            "Range": "0",
+            "Description": "\u2022Attempt to hide away from view. Make a Hide check. DC determined by the GM. On a success, you gain 1 stage of Hidden",
+            "Dice_Roll": "d20",
+            "Action_Type": "DC",
+            "Reaction": "",
+            "Payload": ""
+        },
+    "Defend":{
+            "Type": "Reaction",
+            "Stat": "CON",
+            "Skill": "Endurance",
+            "Speed": "1",
+            "Range": "0",
+            "Description": "\u2022Trigger - An Attack or special move is declared against you or you are in the Area of Effect of an Attack or special move.\nEffect:\n\u2022Roll 1d6 and add your Defend bonus (base + armor) to contest the Attack or evade the effect. On success, you take no damage",
+            "Dice_Roll": "d6",
+            "Action_Type": "Reaction",
+            "Reaction": "",
+            "Payload": "action_result = \"Failure\""
+        },
+    "Brace":{
+            "Type": "Action",
+            "Stat": "CON",
+            "Skill": "Endurance",
+            "Speed": "2",
+            "Range": "0",
+            "Description": "\u2022Roll a Brace check to give yourself an additional d6's to use on reactions until the start of your next turn. \n\u2022Number of d6's = the Brace check /5 (rounded down)",
+            "Dice_Roll": "d20",
+            "Action_Type": "Special",
+            "Reaction": "",
+            "Payload": ""
+        },
+    "Charge Power":{
+        "Type": "Action",
+        "Stat": "CON",
+        "Skill": "Concentration",
+        "Speed": "2",
+        "Range": "0",
+        "Description": "\u2022Roll a Charge Power check to gain momentum towards your next Power Rank \n\u2022DC = 10 + Power Rank",
+        "Dice_Roll": "d20",
+        "Action_Type": "Roll",
+        "Reaction": "",
+        "Payload": ""
+        },
+    "Concentrate":{
+            "Type": "Action",
+            "Stat": "CON",
+            "Skill": "Concentration",
+            "Speed": "2",
+            "Range": "0",
+            "Description": "\u2022Maintain Concentration on the spell or effect. DC = 8 + power rank of spell + number of turns concentrated.",
+            "Dice_Roll": "d20",
+            "Action_Type": "Roll",
+            "Reaction": "",
+            "Payload": ""
+        },
+    "Focus":{
+            "Type": "Action",
+            "Stat": "CON`",
+            "Skill": "Concentration",
+            "Speed": "2",
+            "Range": "0",
+            "Description": "\u2022Focus can be applied before any action to raise the minimum roll value. \n\u2022Roll a Focus check and divide it in half to make a focus value. On your following action, any dice roll below this focus value will be treated as the focus value instead of the dice value (except for Crit fails).",
+            "Dice_Roll": "d20",
+            "Action_Type": "Roll",
+            "Reaction": "",
+            "Payload": ""
+        },
+    "Recover":{
+            "Type": "Action",
+            "Stat": "CON",
+            "Skill": "Vitality",
+            "Speed": "0",
+            "Range": "2",
+            "Description": "\u2022Roll a Recover Check to regain a damaged health block or mental status. DC = 8 + 1 per Debuff status currently affecting you AND Missing Health Block",
+            "Dice_Roll": "d20",
+            "Action_Type": "Roll",
+            "Reaction": "",
+            "Payload": ""
+        },
+    "Enemy History":{
+            "Type": "Action",
+            "Stat": "INT",
+            "Skill": "Academic",
+            "Speed": "1",
+            "Range": "24",
+            "Description": "\u2022Tap knowledge of any historical record or mentions of this specific group. DC is determined by the GM",
+            "Dice_Roll": "d20",
+            "Action_Type": "DC",
+            "Reaction": "",
+            "Payload": ""
+        },
+    "Arcana":{
+            "Type": "Action",
+            "Stat": "INT",
+            "Skill": "Arcane",
+            "Speed": "1",
+            "Range": "24",
+            "Description": "\u2022Tap knowledge of what magic is being used and what effects it has. DC is determined by the GM",
+            "Dice_Roll": "d20",
+            "Action_Type": "DC",
+            "Reaction": "",
+            "Payload": ""
+        },
+    "Tactics":{
+            "Type": "Action",
+            "Stat": "INT",
+            "Skill": "Culture",
+            "Speed": "1",
+            "Range": "24",
+            "Description": "\u2022Roll a Tactics check to tap knowledge of any specific tactics used by the enemy's Stat Block. DC is determined by the GM",
+            "Dice_Roll": "d20",
+            "Action_Type": "DC",
+            "Reaction": "",
+            "Payload": ""
+        },
+    "Search":{
+            "Type": "Action",
+            "Stat": "INT",
+            "Skill": "Investigation",
+            "Speed": "2",
+            "Range": "1",
+            "Description": "",
+            "Dice_Roll": "d20",
+            "Action_Type": "DC",
+            "Reaction": "",
+            "Payload": ""
+        },
+    "Battlefield":{
+            "Type": "Action",
+            "Stat": "INT",
+            "Skill": "Nature",
+            "Speed": "1",
+            "Range": "24",
+            "Description": "\u2022Tap knowledge of any advantages or weaknesses presented on the battlefield. DC is determined by the GM",
+            "Dice_Roll": "d20",
+            "Action_Type": "DC",
+            "Reaction": "",
+            "Payload": ""
+        },
+    "Evaluate Enemy":{
+            "Type": "Action",
+            "Stat": "WIS",
+            "Skill": "Insight",
+            "Speed": "1",
+            "Range": "24",
+            "Description": "\u2022Try to read an enemies motives strengths and difficulty. DC is Determined by the GM",
+            "Dice_Roll": "d20",
+            "Action_Type": "Contest",
+            "Reaction": "",
+            "Payload": ""
+        },
+    "Coordinated Attack":{
+            "Type": "Action",
+            "Stat": "WIS",
+            "Skill": "Interaction",
+            "Speed": "6",
+            "Range": "12",
+            "Description": "\u2022Roll a Coordinated Attack check to invite an ally within range to perform actions (with you) in succession. \n\u2022You and your ally spend their 12 AP for the round to share a single turn and with a total combined AP for both of you equal to your Coordinated Attack check\n\u2022You are limited to movement and one action each.",
+            "Dice_Roll": "d20",
+            "Action_Type": "Special",
+            "Reaction": "",
+            "Payload": ""
+        },
+    "Improvise":{
+            "Type": "Action",
+            "Stat": "WIS",
+            "Skill": "Interaction",
+            "Speed": "1",
+            "Range": "-",
+            "Description": "\u2022Find a branch for a quick weapon, kick dirt to put out a fire, or use your ingenuity to solve a quick problem. DC set by GM.",
+            "Dice_Roll": "d20",
+            "Action_Type": "DC",
+            "Reaction": "",
+            "Payload": ""
+        },
+    "Bandage":{
+            "Type": "Action",
+            "Stat": "WIS",
+            "Skill": "Medicine",
+            "Speed": "2",
+            "Range": "1",
+            "Description": "\u2022Aid an ally by Healing a Health Block or 1 status (if applicable). DC determined by Status or GM",
+            "Dice_Roll": "d20",
+            "Action_Type": "Roll",
+            "Reaction": "",
+            "Payload": ""
+        },
+    "Aim":{
+            "Type": "Action",
+            "Stat": "WIS",
+            "Skill": "Perception",
+            "Speed": "2",
+            "Range": "Attack Range",
+            "Description": "\u2022Roll an Aim check to improve the accuracy of your next attack (action or special move) against a single target you can see. Add your Aim Check total divided by 4 to your following attack roll. ",
+            "Dice_Roll": "d20",
+            "Action_Type": "Roll",
+            "Reaction": "",
+            "Payload": ""
+        },
+    "Find Vitals":{
+            "Type": "Action",
+            "Stat": "WIS",
+            "Skill": "Survival",
+            "Speed": "2",
+            "Range": "24",
+            "Description": "\u2022Roll a Find Vitals to determine an enemies Vital points. The vital stage you learn is equal to your Find Vitals check divided by 10",
+            "Dice_Roll": "d20",
+            "Action_Type": "Contest",
+            "Reaction": "",
+            "Payload": ""
+        },
+    "Taunt":{
+            "Type": "Action",
+            "Stat": "CHA",
+            "Skill": "Aggressive",
+            "Speed": "2",
+            "Range": "24",
+            "Description": "\u2022Roll a Taunt check against a target to inflict the Captivated Frightened, or Frenzied status to a target. DC determined by GM",
+            "Dice_Roll": "d20",
+            "Action_Type": "DC",
+            "Reaction": "",
+            "Payload": ""
+        },
+    "Distract":{
+            "Type": "Action",
+            "Stat": "CHA",
+            "Skill": "Suave",
+            "Speed": "2",
+            "Range": "24",
+            "Description": "\u2022Roll a Distract check against a target to give a target a level of Flanked. DC determined by GM",
+            "Dice_Roll": "d20",
+            "Action_Type": "DC",
+            "Reaction": "",
+            "Payload": ""
+        },
+    "Pacify":{
             "Type": "Action",
             "Stat": "CHA",
             "Skill": "Diplomatic",
@@ -652,12 +489,8 @@
             "Action_Type": "Contest",
             "Reaction": "Diplomatic",
             "Payload": ""
-        }
-    ]
-  },
-  {
-    "Encourage":[
-        {
+        },
+    "Encourage":{
             "Type": "Action",
             "Stat": "CHA",
             "Skill": "Sincere",
@@ -669,6 +502,4 @@
             "Reaction": "",
             "Payload": ""
         }
-    ]
   }
-]
