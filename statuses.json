@@ -1,138 +1,121 @@
-[
-    {"Name":{
+{
+    "Name":{
         "Type": "string(status types)",
         "Description":"string",
         "Stage1": "string",
         "Stage2": "string",
         "Stage3": "string"
-    }
     },
-    {"Bleeding":{
+    "Bleeding":{
         "Type": "Physical",
         "Description":"Losing Blood\n  \u2022 Removal - Bandage(self/ally) check to douse. RDC",
         "Stage1": "\u2022 Take 1 damage at the beginning of the next turn (after regen)",
         "Stage2": "\u2022 Take 2 damage at the beginning of the next turn. (after regen)",
         "Stage3": "\u2022 Take 3 damage at the beginning of the next turn. (after regen)"
-    }
     },
-    {"Blinded":{
+    "Blinded":{
         "Type": "Physical",
         "Description":"Impaired vision\n  \u2022 Removal - Bandage(ally)/Recover(self) check RDC.",
         "Stage1": "\u2022 -2 Attack",
         "Stage2": "\u2022 -5 Attack\n  \u2022 -5 Reactions vs Ranged attacks",
         "Stage3": "\u2022 -10 Attack\n  \u2022 -10 Reactions vs Ranged attacks"
-    }
     },
-    {"Burning":{
+    "Burning":{
         "Type": "Physical",
         "Description":"On Fire\n  \u2022  *Flammable objects adjacent to anything Burning must roll a reaction, if applicable (RDC), or take stages of burning equal to the origin of the status - 1. \nRemoval - Auto decrease\n Improvise (self/ally) check to douse. DC determined by GM",
         "Stage1": "\u2022 Take 1 damage at the beginning of the next turn (after regen)",
         "Stage2": "\u2022 Take 2 damage at the beginning of the next turn. (after regen)",
         "Stage3": "\u2022 Take 3 damage at the beginning of the next turn. (after regen)"
-    }
     },
-    {"Cripppled":{
+    "Cripppled":{
         "Type": "Physical",
         "Description":"Damaged Limbs\n  \u2022 Removal - Bandage(self/ally) check RDC",
         "Stage1": "ARM \u2022 -2 on all actions/reactions with arm\nLEG \u2022 -2 MP and Dodge",
         "Stage2": "ARM \u2022 -5 on all actions/reactions with arm\n\u2022 Ever attack against arm adds a Disarm action\nLEG \n\u2022Double movement Cost and -5 Dodge\n\u2022 Every attack against leg adds a Trip action",
         "Stage3": "ARM \u2022 -10 on all actions/reactions with arm\n\u2022 Ever attack against arm adds a +5 Disarm action\nLEG \n\u2022 Triple movement Cost and -10 Dodge \n\u2022 Every attack against leg adds a +5 Trip action"
-    }
     },
-    {"Deafened":{
+    "Deafened":{
         "Type": "Physical",
         "Description":"Impaired hearing\n  \u2022Removal - Bandage(ally)/Recover(self) check RDC.",
         "Stage1": "\u2022 -1 RP",
         "Stage2": "\u2022 -2 RP\n  \u2022 Attacks from out of sight add a stage of Surprised.",
         "Stage3": "\u2022 -4 RPs. Cannot hear allies or enemies.\n\u2022 Attacks from out of sight add two stages of Surprised"
-    }
     },
-    {"Fatigues":{
+    "Fatigues":{
         "Type": "Physical",
         "Description":"Soreness and lack of stamina\n  \u2022 Removal - Recover (self) check RDC",
         "Stage1": "\u2022 +1 AP cost on all actions",
         "Stage2": "\u2022 +2 AP cost on all actions",
         "Stage3": "\u2022 +3 AP cost on all actions"
-    }
     },
-    {"Impaled":{
+    "Impaled":{
         "Type": "Physical",
         "Description":"Lodged fragments or shrapnel in body\n  \u2022 Removal - Bandage(self/ally) check RDC\n    \u2022 Failed Bandage Check Adds a stage of Bleeding or Crippled",
         "Stage1": "\u2022 Take 1 damage for every 2 actions of the impaled limb",
         "Stage2": "\u2022 Take 1 damage for every action of the impaled limb",
         "Stage3": "\u2022 Take 2 damage for every action of the impaled limb"
-    }
     },
-    {"Captivated":{
+    "Captivated":{
         "Type": "Mental",
         "Description":"Antagonized or focussed on a specific enemy\n  \u2022 Removal - Focus (self)/Encourage (ally) check RDC",
         "Stage1": "\u2022 +1 AP on all actions and movement not directed to the source of the status",
         "Stage2": "\u2022 +2 AP on all actions and movement not directed to the source of the status",
         "Stage3": "\u2022 +3 AP on all actions and movement not directed to the source of the status"
-    }
     },
-    {"Confused":{
+    "Confused":{
         "Type": "Mental",
         "Description":"Lack of clear thinking or blurred understanding.\n  \u2022 Removal - Focus (self)/Encourage (ally) check RDC",
         "Stage1": "\u2022 Crit Fail threshold raises by 1 each turn\n\u2022 Resets on Crit Fail",
         "Stage2": "\u2022 Crit Fail threshold raises by 2 each turn\n\u2022 Resets on Crit Fail",
         "Stage3": "\u2022 Crit Fail threshold raises by 3 each turn\n\u2022 Resets on Crit Fail"
-    }
     },
-    {"Frightened":{
+    "Frightened":{
         "Type": "Mental",
         "Description":"Antagonized or focussed on a specific enemy\n  \u2022 Removal - Focus (self)/Encourage (ally) check RDC",
         "Stage1": "\u2022 +1 AP on all actions and movement directed to the source of the status",
         "Stage2": "\u2022 +2 AP on all actions and movement directed to the source of the status",
         "Stage3": "\u2022 +3 AP on all actions and movement directed to the source of the status"
-    }
     },
-    {"Stunned":{
+    "Stunned":{
         "Type": "Mental",
         "Description":"A state of inaction or delayed mental composure\n*If initiative position is knocked below the bottom of the round, you lose a turn but gain the first initiative position the next round.*\n\u2022 Removal - Focus (self)/Encourage (ally) check RDC",
         "Stage1": "\u2022 Move back 1 position in the initiative order",
         "Stage2": "\u2022 Move back 3 position in the initiative order",
         "Stage3": "\u2022 Move back 5 position in the initiative order\n\u2022 Gain 1 stage of Prone."
-    }
     },
-    {"Momentum":{
+    "Momentum":{
         "Type": "Situational",
         "Description":"Additional force added to attacks\n  \u2022 adds Impact equation\n\u2022 * Gain stages through Positioning and/or charging at enemies in a straight line. \n\u2022 Stage 1= 5 consecutive yards \n\u2022 Stage 2 = 10 consecutive yards \n\u2022 Stage 3 = 20 consecutive yards",
         "Stage1": "\u2022 -1 Crit threshold in the momentum direction\n\u2022 On hit, target Armor -2 Durability",
         "Stage2": "\u2022 -2 Crit threshold in the momentum direction\n\u2022 On hit, target Armor -3 Durability",
         "Stage3": "\u2022 -3 Crit threshold in the momentum direction\n\u2022 On hit, target Armor -5 Durability"
-    }
     },
-    {"Prone":{
+    "Prone":{
         "Type": "Situational",
         "Description":"Degrees of being knocked down or not in a readied combat stance\n\u2022 Removal - using AP to stand. 2 AP per stage",
         "Stage1": "\u2022 -2 on reactions",
         "Stage2": "\u2022 -5 on reactions",
         "Stage3": "\u2022 -10 on reactions"
-    }
     },
-    {"Restrained":{
+    "Restrained":{
         "Type": "Situational",
         "Description":"Limbs or body that are unable to move freely or are bound by an external force\n\u2022 Removal - Contest your Muscle check against their Grapple check to break free.\n  \u2022 Muscle check is made with a -5 per stage",
         "Stage1": "\u2022 Any restrained limb is considered Crippled 1",
         "Stage2": "\u2022 Any restrained limb is considered Crippled 2",
         "Stage3": "\u2022 Any restrained limb is considered Crippled 3"
-    }
     },
-    {"Suffocating":{
+    "Suffocating":{
         "Type": "Situational",
         "Description":"Restricted breathing\n *When CON Mod reaches -3 target is Unconscious\n\u2022 Removal - Contest your Muscle check against their Choke check to break free.\n  \u2022 Muscle check is made with a -5 per stage",
         "Stage1": "\u2022 -1 CON Mod per turn",
         "Stage2": "\u2022 -3 CON Mod per turn",
         "Stage3": "\u2022 -5 CON Mod per turn"
-    }
     },
-    {"Surprised":{
+    "Surprised":{
         "Type": "Situational",
         "Description":"Unaware or unprepared for an attack \n\u2022 Removal - CAll stages lost after the the target is aware of the source of the status",
         "Stage1": "\u2022 Replace the reaction roll with a d20 + Dodge/Defend Respectively",
         "Stage2": "\u2022 Replace the reaction roll with a d20",
         "Stage3": "\u2022 Replace the reaction roll with a d20\n \u2022 Crit fails count as vital 2"
     }
-    }
-]
+  }
