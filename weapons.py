@@ -1,0 +1,256 @@
+# weapons
+weapons_dict = {
+    "weapon_name":{
+        "Name": "String",
+        "Type": "string(handed)",
+        "Damage_Type": "string(damage types)",
+        "Crit_Damage": "int",
+        "Range": "int",
+        "AP": "int",
+        "Features": ["strings(list from weapons key)"],
+        "Techniques": "strings(list from weapons key)",
+        "Description": "string(long form)"
+    },
+    "Dagger":{
+        "Name": "Dagger",
+        "Type": "One Handed",
+        "Damage_Type": "Piercing",
+        "Crit_Damage": 2,
+        "Range": 1,
+        "AP": 2,
+        "Features":["Dual Wielding","Finesse"],
+        "Techniques": "",
+        "Description": ""
+    },
+    "Flail":{
+        "Name": "Flail",
+        "Type": "One Handed",
+        "Damage_Type": "Bludgeoning",
+        "Crit_Damage": 2,
+        "Range": 2,
+        "AP": 4,
+        "Features": ["Grappling"],
+        "Techniques": {"Impact":1},
+        "Description": ""
+    },
+    "War Hammer":{
+        "Name": "War Hammer",
+        "Type": "One Handed",
+        "Damage_Type": "Bludgeoning",
+        "Crit_Damage": 2,
+        "Range": 1,
+        "AP": 3,
+        "Features": [],
+        "Techniques": {"Crush":1},
+        "Description": ""
+    },
+    "Hand Axe":{
+        "Name": "Hand Axe",
+        "Type": "One Handed",
+        "Damage_Type": "Slashing",
+        "Crit_Damage": 2,
+        "Range": 1,
+        "AP": 3,
+        "Features": ["Dual Wielding"],
+        "Techniques": {"Cleave":1},
+        "Description": ""
+    },
+    "Katana":{
+        "Name": "Katana",
+        "Type": "One Handed",
+        "Damage_Type": "Slashing",
+        "Crit_Damage": 2,
+        "Range": 1,
+        "AP": 3,
+        "Features": ["Dual Wielding", "Finesse", "Dualing"],
+        "Techniques": {"Cleave":1, "Flurry":1, "Rend":1},
+        "Description": ""
+    },
+    "Long Sword":{
+        "Name": "Long Sword",
+        "Type": "One Handed",
+        "Damage_Type": "Slashing",
+        "Crit_Damage": 2,
+        "Range": 1,
+        "AP": 3,
+        "Features": ["Versatile","Dueling"],
+        "Techniques": {"Rend": 1},
+        "Description": ""
+    },
+    "Mace":{
+        "Name": "Mace",
+        "Type": "One Handed",
+        "Damage_Type": "Bludgeoning",
+        "Crit_Damage": 2,
+        "Range": 1,
+        "AP": 3,
+        "Features": [],
+        "Techniques": "Crippling 2; Momentum 2; Dueling 1",
+        "Description": ""
+    },
+    "Rapier":{
+        "Name": "Rapier",
+        "Type": "One Handed",
+        "Damage_Type": "Piercing",
+        "Crit_Damage": 2,
+        "Range": 1,
+        "AP": 3,
+        "Features": ["Dueling", "Finesse"],
+        "Techniques": {"Flurry": 2},
+        "Description": ""
+    },
+    "Short Sword":{
+        "Name": "Short Sword",
+        "Type": "One Handed",
+        "Damage_Type": "Slashing",
+        "Crit_Damage": 2,
+        "Range": 1,
+        "AP": 3,
+        "Features": ["Dueling", "Finesse"],
+        "Techniques": {"Flurry": 1},
+        "Description": ""
+    },
+    "Whip":{
+        "Name": "Whip",
+        "Type": "One Handed",
+        "Damage_Type": "Slashing",
+        "Crit_Damage": 2,
+        "Range": 3,
+        "AP": 3,
+        "Features": ["Grappling"],
+        "Techniques": [{"Rend": 1}],
+        "Description": ""
+    },
+    "Maul":{
+        "Name": "Maul",
+        "Type": "Two Handed",
+        "Damage_Type": "Bludgeoning",
+        "Crit_Damage": 3,
+        "Range": 1,
+        "AP": 4,
+        "Features": ["Heavy"],
+        "Techniques": {"Impact": 2, "Crush": 2},
+        "Description": ""
+    },
+    "Great Sword":{
+        "Name": "Great Sword",
+        "Type": "Two Handed",
+        "Damage_Type": "Slashing",
+        "Crit_Damage": 3,
+        "Range": 1,
+        "AP": 4,
+        "Features": ["Heavy", "Versatile"],
+        "Techniques": {"Cleave": 2, "Rend": 2},
+        "Description": ""
+    },
+    "Battle Axe":{
+        "Name": "Battle Axe",
+        "Type": "Two Handed",
+        "Damage_Type": "Slashing",
+        "Crit_Damage": 3,
+        "Range": 1,
+        "AP": 4,
+        "Features": ["Heavy"],
+        "Techniques": {"Cleave": 2, "Rend": 2},
+        "Description": ""
+    },
+    "Spear":{
+        "Name": "Spear",
+        "Type": "Two Handed",
+        "Damage_Type": "Piercing",
+        "Crit_Damage": 3,
+        "Range": 2,
+        "AP": 3,
+        "Features": ["Finesse", "Thrown"],
+        "Techniques": {"Flurry": 1, "Impact": 2},
+        "Description": ""
+    },
+    "Quarterstaff":{
+        "Name": "Quarterstaff",
+        "Type": "Two Handed",
+        "Damage_Type": "Bludgeoning",
+        "Crit_Damage": 2,
+        "Range": 2,
+        "AP": 3,
+        "Features": [],
+        "Techniques": {"Flurry": 2},
+        "Description": ""
+    },
+    "Glaive":{
+        "Name": "Glaive",
+        "Type": "Two Handed",
+        "Damage_Type": "Slashing",
+        "Crit_Damage": 2,
+        "Range": 2,
+        "AP": 4,
+        "Features": ["Versatile"],
+        "Techniques": {"Impact": 1},
+        "Description": ""
+    },
+    "Heavy Crossbow":{
+        "Name": "Heavy Crossbow",
+        "Type": "Ranged",
+        "Damage_Type": "Piercing",
+        "Crit_Damage": 3,
+        "Range": 15,
+        "AP": 1,
+        "Features": ["Finesse","Reload"],
+        "Techniques": {"Distance": 1, "Pin Point": 2},
+        "Description": ""
+    },
+    "Javelin":{
+        "Name": "Javelin",
+        "Type": "Ranged",
+        "Damage_Type": "Piercing",
+        "Crit_Damage": 3,
+        "Range": 5,
+        "AP": 3,
+        "Features": ["Finesse","Thrown"],
+        "Techniques": {"Impact": 2},
+        "Description": ""
+    },
+    "Light Crossbow":{
+        "Name": "Light Crossbow",
+        "Type": "Ranged",
+        "Damage_Type": "Piercing",
+        "Crit_Damage": 2,
+        "Range": 5,
+        "AP": 1,
+        "Features": ["Finesse, Reload"],
+        "Techniques": {"Distance":1,"Pin Point":1},
+        "Description": ""
+    },
+    "Longbow":{
+        "Name": "Longbow",
+        "Type": "Ranged",
+        "Damage_Type": "Piercing",
+        "Crit_Damage": 2,
+        "Range": 15,
+        "AP": 3,
+        "Features": ["Finesse"],
+        "Techniques": {"Distance": 2},
+        "Description": ""
+    },
+    "Short Bow":{
+        "Name": "Short Bow",
+        "Type": "Ranged",
+        "Damage_Type": "Piercing",
+        "Crit_Damage": 2,
+        "Range": 5,
+        "AP": 3,
+        "Features": ["Finesse"],
+        "Techniques": {"Distance": 1,"Flurry": 1},
+        "Description": ""
+    },
+    "Throwing Knives":{
+        "Name": "Throwing Knives",
+        "Type": "Ranged",
+        "Damage_Type": "Piercing",
+        "Crit_Damage": 3,
+        "Range": 5,
+        "AP": 2,
+        "Features": ["Finesse","Thrown"],
+        "Techniques": {"Distance": 1,"Flurry": 1},
+        "Description": ""
+    }
+    }
