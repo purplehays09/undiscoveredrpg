@@ -162,5 +162,158 @@ source.Pre_Action.update(Versatile = features_dict["Thrown"]["Pre_Action"])
 source.Pre_Action.pop("Versatile)
         '''
     },
-    
+
+    #armor features 
+    "Agility":{
+        "Description":{
+                "Stage 1": "+2 to your Coordination Skill",
+                "Stage 2": "+5 to your Coordination Skill",
+                "Stage 3": "+5 to your Coordination skill\nRolling a 6 on your Dodge Reaction is an automatic success."
+        },
+        "Pre_Action":'''
+
+          ''',
+        "Post_Action":'''
+
+          ''',
+        "Equip":'''
+
+        ''',
+        "Unequip":'''
+
+        '''
+    },
+    "Braced":{
+        "Description":{
+                "Stage 1": "You gain 1 Max RP",
+                "Stage 2": "You gain 2 Max RP",
+                "Stage 3": "You gain 3 Max RP"
+        },
+        "Pre_Action":'''
+
+          ''',
+        "Post_Action":'''
+
+          ''',
+        "Equip":'''
+
+        ''',
+        "Unequip":'''
+
+        '''
+    },
+    "Defense":{
+        "Description":{
+                "Stage 1": "+2 to your Endurance Skill",
+                "Stage 2": "+5 to your Endurance Skill",
+                "Stage 3": "+5 to your Endurance skill\nRolling a 6 on your Block Reaction is an automatic success."
+        },
+        "Pre_Action":'''
+
+          ''',
+        "Post_Action":'''
+
+          ''',
+        "Equip":'''
+
+        ''',
+        "Unequip":'''
+
+        '''
+    },
+    "Fortified":{
+        "Description":{
+                "Stage 1": "You have a +2 on reactions against slashing damage",
+                "Stage 2": "",
+                "Stage 3": "You can ignore stage 1 of Physical Statuses"
+        },
+        "Pre_Action":'''
+
+          ''',
+        "Post_Action":'''
+
+          ''',
+        "Equip":'''
+
+        ''',
+        "Unequip":'''
+
+        '''
+    },
+    "Nimble":{
+        "Description":{
+                "Stage 1": "",
+                "Stage 2": "",
+                "Stage 3": ""
+        },
+        "Pre_Action":'''
+
+          ''',
+        "Post_Action":'''
+
+          ''',
+        "Equip":'''
+
+        ''',
+        "Unequip":'''
+
+        '''
+    },
+    "Pocketed":{
+        "Description":{
+                "Stage 1": "",
+                "Stage 2": "",
+                "Stage 3": ""
+        },
+        "Pre_Action":'''
+
+          ''',
+        "Post_Action":'''
+
+          ''',
+        "Equip":'''
+
+        ''',
+        "Unequip":'''
+
+        '''
+    },
+    "Restricting":{
+        "Description":{
+                "Stage 1": "",
+                "Stage 2": "",
+                "Stage 3": ""
+        },
+        "Pre_Action":'''
+
+          ''',
+        "Post_Action":'''
+
+          ''',
+        "Equip":'''
+
+        ''',
+        "Unequip":'''
+
+        '''
+    },
+    "Unburdened":{
+        "Description":{
+                "Stage 1": "",
+                "Stage 2": "",
+                "Stage 3": ""
+        },
+        "Pre_Action":'''
+
+          ''',
+        "Post_Action":'''
+
+          ''',
+        "Equip":'''
+
+        ''',
+        "Unequip":'''
+
+        '''
+    }    
 }

@@ -9,19 +9,19 @@ armors_dict = {
         "Name":"Unarmored",
         "Type":"Light",
         "Durability":"0",
-        "Features":[{"Dictionary":"Value"}]
+        "Features":[{"Agility":3},{"Unburdened":2}]
     },
     "Leather Armor":{
         "Name":"Leather Armor",
         "Type":"Light",
         "Durability":"3",
-        "Features":[{"Dictionary":"Value"}]
+        "Features":[{"Agility":1},{"Pocketed":1}]
     },
     "Gambeson":{
         "Name":"Gambeson",
         "Type":"Light",
         "Durability":"3",
-        "Features":[{"Dictionary":"Value"}]
+        "Features":[{"Agility":1},{"Nimble":1}]
     },
     "Chain Mail":{
         "Name":"Chain Mail",
@@ -35,7 +35,7 @@ armors_dict = {
         "Durability":"4",
         "Features":[{"Dictionary":"Value"}]
     },
-    "Breast Plate":{
+    "Ring Mail":{
         "Name":"Breast Plate",
         "Type":"Medium",
         "Durability":"4",
