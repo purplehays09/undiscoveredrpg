@@ -185,9 +185,9 @@ source.Pre_Action.pop("Versatile)
     },
     "Braced":{
         "Description":{
-                "Stage 1": "You gain 1 Max RP",
-                "Stage 2": "You gain 2 Max RP",
-                "Stage 3": "You gain 3 Max RP"
+                "Stage 1": "You have a +2 on reactions against Slashing damage",
+                "Stage 1": "You have a +5 on reactions against Slashing damage",
+                "Stage 3": "You have a +5 on reactions against Slashing damage and you can ignore Stage 1 physical statuses"
         },
         "Pre_Action":'''
 
@@ -223,9 +223,9 @@ source.Pre_Action.pop("Versatile)
     },
     "Fortified":{
         "Description":{
-                "Stage 1": "You have a +2 on reactions against slashing damage",
-                "Stage 2": "",
-                "Stage 3": "You can ignore stage 1 of Physical Statuses"
+                "Stage 1": "You have a +2 on reactions against Piercing damage",
+                "Stage 2": "You have a +5 on reactions against Piercing damage",
+                "Stage 3": "You have a +5 on reactions against Piercing damage and you can ignore Stage 1 physical statuses"
         },
         "Pre_Action":'''
 
@@ -242,9 +242,9 @@ source.Pre_Action.pop("Versatile)
     },
     "Nimble":{
         "Description":{
-                "Stage 1": "",
+                "Stage 1": "You can move 1 yard each time you take Coordination Reactions",
                 "Stage 2": "",
-                "Stage 3": ""
+                "Stage 3": "You can move 1 yard each time you take Coordination Reactions"
         },
         "Pre_Action":'''
 
