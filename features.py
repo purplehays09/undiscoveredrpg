@@ -186,7 +186,7 @@ source.Pre_Action.pop("Versatile)
     "Braced":{
         "Description":{
                 "Stage 1": "You have a +2 on reactions against Slashing damage",
-                "Stage 1": "You have a +5 on reactions against Slashing damage",
+                "Stage 2": "You have a +5 on reactions against Slashing damage",
                 "Stage 3": "You have a +5 on reactions against Slashing damage and you can ignore Stage 1 physical statuses"
         },
         "Pre_Action":'''
@@ -240,11 +240,11 @@ source.Pre_Action.pop("Versatile)
 
         '''
     },
-    "Nimble":{
+    "Flexible":{
         "Description":{
-                "Stage 1": "You can move 1 yard each time you take Coordination Reactions",
-                "Stage 2": "",
-                "Stage 3": "You can move 1 yard each time you take Coordination Reactions"
+                "Stage 1": "You have a +2 on reactions against Bludgeoning damage",
+                "Stage 2": "You have a +5 on reactions against Bludgeoning damage",
+                "Stage 3": "You have a +5 on reactions against Bludgeoning damage \nYou can move 1 yard each time you take Coordination Reactions"
         },
         "Pre_Action":'''
 
@@ -261,9 +261,9 @@ source.Pre_Action.pop("Versatile)
     },
     "Pocketed":{
         "Description":{
-                "Stage 1": "",
-                "Stage 2": "",
-                "Stage 3": ""
+                "Stage 1": "Increase your utility slots by 1",
+                "Stage 2": "Increase your utility slots by 2",
+                "Stage 3": "Increase your utility slots by 3"
         },
         "Pre_Action":'''
 
@@ -280,9 +280,9 @@ source.Pre_Action.pop("Versatile)
     },
     "Restricting":{
         "Description":{
-                "Stage 1": "",
-                "Stage 2": "",
-                "Stage 3": ""
+                "Stage 1": "Decrease your AP and MP by 1",
+                "Stage 2": "Decrease your AP and MP by 2",
+                "Stage 3": "Decrease your AP and MP by 3"
         },
         "Pre_Action":'''
 
@@ -299,9 +299,9 @@ source.Pre_Action.pop("Versatile)
     },
     "Unburdened":{
         "Description":{
-                "Stage 1": "",
-                "Stage 2": "",
-                "Stage 3": ""
+                "Stage 1": "Increase your AP and MP by 1",
+                "Stage 2": "Increase your AP and MP by 2",
+                "Stage 3": "Increase your AP and MP by 3"
         },
         "Pre_Action":'''
 

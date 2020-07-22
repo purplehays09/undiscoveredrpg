@@ -18,55 +18,55 @@ armors_dict = {
         "Type":"Light",
         "Durability":"3",
         "Material": "Hide",
-        "Features":[{"Agility":1},{"Pocketed":1}]
+        "Features":[{"Agility":1},{"Pocketed":1},{"Flexible":1}]
     },
     "Gambeson":{
         "Name":"Gambeson",
         "Type":"Light",
         "Durability":"3",
         "Material": "Fabric",
-        "Features":[{"Agility":1},{"Nimble":1}]
+        "Features":[{"Agility":1},{"Flexible":1},{"Unburdened":1}]
+    },
+    "Ring Mail":{
+        "Name":"Ring Mail",
+        "Type":"Medium",
+        "Durability":"4",
+        "Material": ["Metal","Hide"],
+        "Features":[{"Flexible":1},{"Braced":1}]
     },
     "Chain Mail":{
         "Name":"Chain Mail",
         "Type":"Medium",
         "Durability":"4",
         "Material": "Metal",
-        "Features":[{"Dictionary":"Value"}]
+        "Features":[{"Defense":2}]
     },
     "Splint Mail":{
         "Name":"Splint Mail",
         "Type":"Medium",
         "Durability":"4",
         "Material": "Metal",
-        "Features":[{"Dictionary":"Value"}]
-    },
-    "Ring Mail":{
-        "Name":"Breast Plate",
-        "Type":"Medium",
-        "Durability":"4",
-        "Material": ["Metal","Hide"]
-        "Features":[{"Dictionary":"Value"}]
+        "Features":[{"Braced":1},{"Defense":2}]
     },
     "Scale Mail":{
         "Name":"Scale Mail",
         "Type":"Heavy",
         "Durability":"5",
         "Material": "Metal",
-        "Features":[{"Dictionary":"Value"}]
+        "Features":[{"Restricting":1},{"Defense":1},{"Braced":1}]
     },
     "Plate Mail":{
         "Name":"Plate Mail",
         "Type":"Heavy",
         "Durability":"5",
         "Material": "Metal",
-        "Features":[{"Dictionary":"Value"}]
+        "Features":[{"Restricting":2},{"Defense":1},{"Braced":1},{"Fortified":1}]
     },
     "Full Plate":{
         "Name":"Full Plate",
         "Type":"Heavy",
         "Durability":"7",
         "Material": "Metal",
-        "Features":[{"Dictionary":"Value"}]
-    },
+        "Features":[{"Restricting":2},{"Defense":1,}{"Braced":1},{"Fortified":1}]
+    }
 }
