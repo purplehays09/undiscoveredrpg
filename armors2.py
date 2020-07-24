@@ -65,8 +65,8 @@ armors_dict = {
     "Full Plate":{
         "Name":"Full Plate",
         "Type":"Heavy",
-        "Durability":"7",
+        "Durability":"6",
         "Material": "Metal",
-        "Features":[{"Restricting":2},{"Defense":1,}{"Braced":1},{"Fortified":1}]
+        "Features":[{"Restricting":3},{"Defense":1,},{"Braced":1},{"Fortified":1}]
     }
 }
