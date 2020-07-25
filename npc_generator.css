@@ -98,3 +98,25 @@ button{
 .title{
     background-color: papayawhip;
 }
+
+  
+  table#map{
+    width:80%;
+    text-align:center;
+    margin:0 auto;
+  }
+  td:hover{
+    background-color:red;
+  }
+  button{
+    width:55%;
+    height:55%;
+  }
+  
+  button:hover{
+    background-color:lightgreen;
+  }
+
+  .gut{
+      display: flex;
+  }
