@@ -9,7 +9,6 @@
 <body>
     <header>
         <nav>
-            <p><a href="encounter_generator.html">Encounter Generator</a></p>
             <!-- <p>Home</p>
             <p>About</p>
             <p>Contact</p> -->
@@ -20,8 +19,29 @@
         <h2>NPC Generator</h2>
         <!-- <img src="https://images.unsplash.com/photo-1595160510280-c1f6dd26aa9d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2090&q=80" alt=""> -->
     </section>
+
+
     <section id="gut">
-        <button id="generate" onclick="generateNPC(options)">Generate NPC</button>
+        <button id="generate" onclick="generateEncounter(encounterOptions)">Generate enconter</button>
+        
+        <table>
+            <tr>
+                <td class="title">Set Up</td>
+                <td id="set-up"></td>
+            </tr>
+            <tr>
+                <td class="title">Hook</td>
+                <td id="hook"></td>
+            </tr>
+            <tr>
+                <td class="title">Trademark</td>
+                <td id="trademark"></td>
+            </tr>
+        </table>
+
+
+        <button id="npc" onclick="generateNPC(options)">Generate NPC</button>
+
         <table>
             <tr>
                 <td class="title">Name</td>

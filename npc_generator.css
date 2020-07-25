@@ -21,7 +21,8 @@ time, mark, audio, video {
 	border: 1px dotted grey;
 	font-size: 100%;
 	font: 62.5%;
-	vertical-align: baseline;
+    vertical-align: baseline;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -78,6 +79,7 @@ button{
     width: 40%;
     padding: .5%;
     font-size: 1.2rem;
+    background-color: rosybrown;
 }
 
 #gut table{
