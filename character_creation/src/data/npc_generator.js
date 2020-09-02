@@ -965,7 +965,7 @@ wearing just a pillowcase
 has whiskers
 dirty body in nice clean expensive tuxedo`
 
-const options = {
+export const options = {
     names : nameString.split('\n'),
     monikers : monikerString.split('\n'),
     races : raceString.split('\n'),
