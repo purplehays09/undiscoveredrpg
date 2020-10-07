@@ -53,6 +53,12 @@ export const questions = {
         }
     },
     history:{
+        society:{
+            label:"Society would call my family or upbrining:",
+            type:"select",
+            name:"society",
+            placeholder:"",
+        },
         background:{
             label:"Before I became an adventurer, I was a(n):",
             type:"select",

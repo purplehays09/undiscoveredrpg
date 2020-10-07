@@ -1,3 +1,8 @@
+*{
+  border:1px dotted grey;
+
+}
+
 .App {
   text-align: center;
 }
@@ -26,6 +31,14 @@
 
 .App-link {
   color: #61dafb;
+}
+
+form{
+  width:80%;
+  margin:1% auto;
+  background-color: antiquewhite;
+  border:3px solid black;
+  border-radius: 15px;
 }
 
 @keyframes App-logo-spin {

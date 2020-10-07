@@ -1,10 +1,11 @@
 import React, {useState, useEffect}from 'react'
-import {questions} from './data/question'
-import {races} from './data/races'
-import {backgrounds} from './data/backgrounds'
-import Intro_Card from './Intro_Card'
-import Input from './Input'
-import Select from './Select'
+import {questions} from '../data/question'
+// import {races} from '../data/races'
+// import {backgrounds} from '../data/backgrounds'
+import IntroCard from './IntroCard'
+import HistoryCard from './HistoryCard'
+// import Input from './Input'
+// import Select from './Select'
 
 const emptyForm = {
     name:'',
@@ -15,6 +16,7 @@ const emptyForm = {
     adventuring_race:'',
     roleplaying_race:'',
     combat_race:'',
+    society:'',
     background:'',
     call_to_action:'',
     mission:'',
@@ -41,7 +43,14 @@ export default function Dashboard(){
 
     const updateCharacter = (evt) => {
         const {name,value} = evt.target
-
+        if(name === 'race'){
+            console.log('pre change race: subrace ===>',character.subrace)
+            setCharacter({
+                ...character,
+                subrace:'none'
+            })
+            console.log('post change race: subrace ===>',character.subrace)
+        }
         setCharacter({
             ...character,
             [name]:value
@@ -52,12 +61,20 @@ export default function Dashboard(){
 
     return(
         <div>
-            <Intro_Card
+            <IntroCard
                 questions={questions.intro}
                 subquestions={questions.race}
                 updateCharacter={updateCharacter}
                 character={character}
             />
+            
+            <HistoryCard
+                questions={questions.history}
+                subquestions={questions.background}
+                updateCharacter={updateCharacter}
+                character={character}
+            />
+            
         </div>
     )
 }

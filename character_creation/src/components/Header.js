@@ -12,6 +12,7 @@ export default function Header(){
                     <a href='/'>About</a>
                     <a href='/'>Reference</a>
                     <a href='/'>Login</a>
+                    <a href='/'>Sign Up</a>
                 </div>
             </nav>
         </header>

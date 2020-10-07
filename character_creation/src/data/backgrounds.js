@@ -1,5 +1,5 @@
 export const backgrounds = {
-    "Humble Beginnins":{
+    "Humble Beginnings":{
         "Description":"",
         "Type":"General",
         "Skill":"Use What you Have - You almost never have a complete tool set. If you have at least one item of a desired tool kit, you can take a stand alone item or a tool for another kit and you can double your WISDOM bonus when you do an Improvise check to (DC 15) to use supplant it for your existing kit",
@@ -262,7 +262,7 @@ export const backgrounds = {
     
     "Well to Do":{
         "Description":"",
-        "Type":"",
+        "Type":"General",
         "Skill":"Higher Learning - You have benefitted from your wealth and position and have gained learning that most don't have the luxury of attaining. You can select 1 subject and  double your INTELLIGENCE bonus with any skill checks made about that subject.",
         "Renown":[
             "Professionals: Good for it - You walk with the air of one who has wealth. You can double your CHARISMA bonus on any check to defer payment until a later date. On a succes, the target will take a minimum of half the value for now as long as their is a strong condition to complete the payment. "
@@ -371,14 +371,5 @@ export const backgrounds = {
             "Forbidden Knowledge - Your seek for knowledge to find a solution to your problems. In all your searching, you have come up empty with only hints and whispers of the knowledge you seek.",
             "You know too much - In your research, you have learned of a secret that others wish to keep hidden. Dark forces now try to put out the flame of knowledge that you have uncovered before it comes to light."
         ]
-    },
-    
-    "Backgruond":{
-        "Description":"",
-        "Type":"",
-        "Skill":"",
-        "Renown":"",
-        "Equipment":[],
-        "Unfinished Business":[]
-    },
+    }
 }

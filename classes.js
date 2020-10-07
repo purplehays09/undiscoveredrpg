@@ -1,4 +1,4 @@
-{
+const classes ={
     "Name":{
         "Description": "string",
         "Offense Ability": "string",
