@@ -9,33 +9,61 @@ import HistoryCard from './HistoryCard'
 
 const emptyForm = {
     name:'',
-    race:'',
-    subrace:'',
+    race: {
+        main:'',
+        sub:'',
+        bonuses:{
+            adventuring:[],
+            roleplaying:[],
+            combat:[]
+        }
+    },
     trademark:'',
     quirk:'',
-    adventuring_race:'',
-    roleplaying_race:'',
-    combat_race:'',
-    society:'',
-    background:'',
+    background: {
+        main:'',
+        sub:'',
+        bonuses:{
+            skill:'',
+            renown:'',
+            unfinished_business:'',
+            equipment:[]
+        }
+    },
     call_to_action:'',
     mission:'',
-    skill_background:'',
-    renown_background:'',
-    equipment:[],
-    unfinished_business:'',
-    class:'',
+    class:{
+        main:'',
+        sub:'',
+        bonuses:[]
+    },
     weapon:'',
     armor:'',
-    options:[],
-    subclass:[],
-    highest:'',
-    lowest:'',
-    second_high:'',
-    second_low:'',
+    attributes:{
+        highest:'',
+        lowest:'',
+        second_high:'',
+        second_low:''
+    },
     skills:[],
     values:[],
-    principles:[]
+    // subrace:'',
+    // adventuring_race:'',
+    // roleplaying_race:'',
+    // combat_race:'',
+    // society:'',
+    // background:'',
+    // skill_background:'',
+    // renown_background:'',
+    // equipment:[],
+    // unfinished_business:'',
+    // options:[],
+    // subclass:[],
+    // highest:'',
+    // lowest:'',
+    // second_high:'',
+    // second_low:'',
+    // principles:[]
 }
 
 export default function Dashboard(){
@@ -44,17 +72,32 @@ export default function Dashboard(){
     const updateCharacter = (evt) => {
         const {name,value} = evt.target
         if(name === 'race'){
-            console.log('pre change race: subrace ===>',character.subrace)
+
             setCharacter({
                 ...character,
-                subrace:'none'
+                race:{
+                    ...character.race,
+                    main:value,
+                    sub:''
+                }
             })
-            console.log('post change race: subrace ===>',character.subrace)
+        }else if(name === 'subrace'){
+
+
+            setCharacter({
+                ...character,
+                race:{
+                    ...character.race,
+                    sub:value
+                }
+            })
+        }else{
+            console.log("you shouldn't be here")
+            setCharacter({
+                ...character,
+                [name]:value
+            })
         }
-        setCharacter({
-            ...character,
-            [name]:value
-        })
     }
 
     
@@ -68,12 +111,12 @@ export default function Dashboard(){
                 character={character}
             />
             
-            <HistoryCard
+            {/* <HistoryCard
                 questions={questions.history}
                 subquestions={questions.background}
                 updateCharacter={updateCharacter}
                 character={character}
-            />
+            /> */}
             
         </div>
     )

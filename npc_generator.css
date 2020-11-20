@@ -22,6 +22,8 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: 62.5%;
     vertical-align: baseline;
+    background-color: black;
+    color:white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 /* HTML5 display-role reset for older browsers */
@@ -97,6 +99,7 @@ button{
 
 .title{
     background-color: papayawhip;
+    color:black;
 }
 
   

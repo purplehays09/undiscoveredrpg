@@ -36,19 +36,19 @@ export const questions = {
         adventuring_race:{
             label:"While adventuring through the world, I lean on my racial skill of:",
             type:"radio",
-            name:"adventuring",
+            name:"race",
             placeholder:"",
         },
         roleplaying_race:{
             label:"In conversations, I can rely on my racial skill of:",
             type:"radio",
-            name:"roleplaying",
+            name:"race",
             placeholder:"",
         },
         combat_race:{
             label:"If a fight breaks out, I can always depend on my racial bonus:",
             type:"radio",
-            name:"combat",
+            name:"race",
             placeholder:"",
         }
     },
@@ -56,13 +56,13 @@ export const questions = {
         society:{
             label:"Society would call my family or upbrining:",
             type:"select",
-            name:"society",
+            name:"background.society",
             placeholder:"",
         },
         background:{
             label:"Before I became an adventurer, I was a(n):",
             type:"select",
-            name:"background",
+            name:"background.background",
             placeholder:"",
         },
         call_to_action:{
@@ -82,25 +82,25 @@ export const questions = {
         skill_background:{
             label:"I have picked up the ability to:",
             type:"radio",
-            name:"background_skill",
+            name:"background.skill",
             placeholder:"",
         },
         renown_background:{
             label:"I have a special renown with:",
             type:"radio",
-            name:"renown",
+            name:"background.renown",
             placeholder:"",
         },
         equipment:{
             label:"All I still have from that life are my:",
             type:"checkbox",
-            name:"equipment",
+            name:"background.equipment",
             placeholder:"",
         },
         unfinished_business:{
             label:"I have unfinished business from my past:",
             type:"radio",
-            name:"unfinished_business",
+            name:"background.unfinished_business",
             placeholder:"",
         }
     },
@@ -108,7 +108,7 @@ export const questions = {
         class:{
             label:"When a fight breaks out, I can rely on my skills as a:",
             type:"select",
-            name:"class",
+            name:"class.class",
             placeholder:"",
         },
         weapon:{

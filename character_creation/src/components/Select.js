@@ -5,7 +5,6 @@ export default function Select(props){
     const {label,name,options,onChange} = props
 
 
-
     return(
         <div>
             <label>
